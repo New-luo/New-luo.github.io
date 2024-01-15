@@ -1,0 +1,22 @@
+
+
+<html>
+    <head>
+        <title>安慰语录JS示例</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <p>Hello 大家好</p>
+<p>我是罗，这是我的个人网站。 </p>
+<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+        <div id="anwei"></div>
+        <!--引入jquery-->
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script>
+            var url="https://v.api.aa1.cn/api/api-wenan-anwei/index.php?type=json"
+             $.getJSON(url, function(data){
+                 $('#anwei').append(data.anwei);
+             });
+        </script>
+    </body>
+</html>
