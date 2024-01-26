@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>ECharts</title>
+      <link href="/2024/01/22/echarts/"/>
+      <url>/2024/01/22/echarts/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p><ul><li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li><li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li><li>③创建一个dom元素 用来放置图表 </li><li>④配置Echarts属性  </li></ul><p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p><ul><li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改<table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/Echarts.png"></td>    </tr></tbody></table></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> ECharts </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ECharts </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Nvm工具</title>
+      <link href="/2024/01/22/nvm/"/>
+      <url>/2024/01/22/nvm/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p><ul><li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li><li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li><li>③创建一个dom元素 用来放置图表 </li><li>④配置Echarts属性  </li></ul><p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p><ul><li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改<table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/Echarts.png"></td>    </tr></tbody></table></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Nvm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> Nvm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue</title>
+      <link href="/2024/01/20/blog-open-source/"/>
+      <url>/2024/01/20/blog-open-source/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vue封装数据发送后台"><a href="#vue封装数据发送后台" class="headerlink" title="vue封装数据发送后台"></a>vue封装数据发送后台</h1><p>可以使用将数据转换为JSON格式或者使用FormData对象封装数据(键值对)键对应后台的实体类,值前端要传入后台的值<br>JSON:<br>const data = {<br>  name: ‘John’,<br>  age: 25,<br>};<br>JSON.stringify(data)</p><p>FormData:<br>const formData = new FormData();<br>formData.append(‘name’, ‘John’);<br>formData.append(‘age’, 25);</p><hr><h1 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h1><p>1.创建一个表单并添加一个文件输入控件，例如使用<code>&lt;input type="file"&gt;</code>元素。<br>2.监听文件选择事件，获取用户选择的文件，并将其存储在Vue组件的data属性中。<br>3.通过FormData（表单数据对象）来构造包含上传文件的表单数据。<br>4.发送POST请求到服务器，携带表单数据，以此来完成文件上传操作。<br>后端，我们使用了Spring Boot框架和Spring MVC来处理文件上传。通过@RequestParam注解来获取上传的文件，MultipartFile对象包含了文件的各种信息和操作方法。我们使用getBytes()方法获取文件的字节数组，然后使用Files.write()方法将文件写入目标路径。</p><h1 id="vue生命周期"><a href="#vue生命周期" class="headerlink" title="vue生命周期"></a>vue生命周期</h1><p>1.<code>beforeCreate</code>：实例刚被创建，数据观测和事件配置之前，此时无法访问到data和methods等实例属性。<br>2.<code>created</code>：实例已经被创建，数据观测和事件配置完成，此时可以访问到data和methods等实例属性，但未挂载到DOM上。<br>3.<code>beforeMount</code>：在挂载开始之前被调用，此时模板编译已完成，但DOM还未生成。<br>4.<code>mounted</code>：实例已经挂载到DOM上，此时可以对DOM进行操作，访问到挂载的元素。<br>5.<code>beforeUpdate</code>：数据更新时，重新渲染之前被调用，此时数据已经更新，但DOM尚未重新渲染。<br>6.<code>updated</code>：数据更新并且DOM重新渲染完成后被调用。<br>7.<code>beforeDestroy</code>：实例销毁之前被调用，此时实例仍然完全可用。<br>8.<code>destroyed</code>：实例销毁后被调用，此时实例及其所有的事件监听器和观察者都被移除。<br>9.<code>beforeCreate</code>和<code>created</code>钩子函数会在组件实例化之前执行；<br>10.<code>beforeDestroy</code>和<code>destroyed</code>钩子函数会在组件销毁之前执行。</p><h1 id="vue权限控制"><a href="#vue权限控制" class="headerlink" title="vue权限控制"></a>vue权限控制</h1><p>当我们开发一个应用程序时，经常需要对用户的权限进行控制，以决定用户能够执行哪些操作或看到哪些内容。<br>首先，我们需要在Vue中注册这个自定义指令。指令是一种特殊的功能，可以在HTML标签中使用，用来控制元素的行为。在这个例子中，我们将指令名称设置为<code>permission</code>。<br>接下来，我们定义了指令的具体实现逻辑。当一个元素被插入到页面中时，指令会生效。在这个函数中，我们首先从浏览器的存储中（<code>sessionStorage</code>）获取用户的权限列表，这个列表中存储了用户拥有的权限信息。<br>然后，我们判断当前权限列表中是否包含了指令的绑定值（也就是所需的权限）。如果不包含，说明用户没有相应的权限。在这种情况下，我们会进行以下操作：<br>如果元素不是按钮，我们会将它隐藏起来，使用户无法看到它。<br>如果元素是按钮，我们会禁用它，使用户无法点击它。<br>此外，我们还给禁用的按钮添加了一个CSS类名<code>is-disabled</code>，通过添加这个类名，我们可以为禁用的按钮添加一些特定的样式。<br>最后，代码中还添加了一个自定义方法<code>contains</code>，用来判断一个数组是否包含某个特定的值。尽管在这段代码中没有使用到这个方法，但可能会在其他地方使用到它。<br>总的来说，这段代码实现了一个功能权限判断的指令。它通过用户的权限列表来控制应用程序中的元素是否可见或可操作，从而实现了权限控制的功能。</p><h1 id="spingmvc的一些注解"><a href="#spingmvc的一些注解" class="headerlink" title="spingmvc的一些注解"></a>spingmvc的一些注解</h1><p>1.@Controller：用于标识一个类为Spring MVC的控制器，可以处理HTTP请求并返回响应结果。<br>2.@RequestMapping：用于映射请求路径和控制器方法，支持路径变量、请求参数和HTTP方法等条件。<br>3.@PathVariable：用于获取URL中的路径变量，可以将其绑定到方法参数中。<br>4.@RequestParam：用于获取请求参数，可以将其绑定到方法参数中，并支持参数默认值、必填项和名称映射等配置。<br>5.@ResponseBody：用于标识方法返回的结果直接写入HTTP响应体中，而不是通过模板引擎渲染页面。<br>6.@ModelAttribute：用于在请求处理方法执行前将请求参数绑定到模型对象中，以便在视图中进行显示。<br>7.@SessionAttribute：用于将模型对象存储到会话中，以便多个请求之间共享数据。<br>8.@CookieValue：用于获取指定名称的cookie值，并将其绑定到方法参数中。<br>9.@InitBinder：用于定制数据绑定操作，例如对日期格式进行转换、防止XSS攻击等。<br>10.@ExceptionHandler：用于捕获控制器内部抛出的异常，并进行统一处理和返回错误信息。</p><h1 id="spingmvc返回数据到前端的几种方式"><a href="#spingmvc返回数据到前端的几种方式" class="headerlink" title="spingmvc返回数据到前端的几种方式"></a>spingmvc返回数据到前端的几种方式</h1><p>1.使用@ResponseBody注解：在控制器的方法上添加@ResponseBody注解，可以将方法的返回值直接写入HTTP响应体中。Spring MVC会自动将返回值转换为JSON、XML等格式，并设置正确的Content-Type头。<br>2.返回ModelAndView对象：ModelAndView是Spring MVC中常用的返回类型，它包含了要返回给视图的数据和视图名称。<br>3.使用Model和Map：可以在方法参数中添加Model或Map类型的参数，然后将数据存储到其中。Spring MVC会自动将这些数据传递给视图。<br>4.使用HttpServletRequest和HttpServletResponse：可以直接在方法参数中声明HttpServletRequest和HttpServletResponse对象，并使用它们进行数据读取和写入。</p><hr><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>养老院管理系统</title>
+      <link href="/2024/01/20/blog/"/>
+      <url>/2024/01/20/blog/</url>
+      
+        <content type="html"><![CDATA[<h1 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h1><p>随着人口老龄化趋势的加剧，养老问题已经成为全球面临的重大社会问题之一。在中国，老年人口数量庞大，养老需求迅速增长，但养老服务水平和质量普遍存在不足，尤其是养老机构管理问题。当前，许多养老机构存在管理混乱、服务质量低下、人才短缺等问题，不能及时满足老年人的需求，给老年人的身体和心理健康带来了很大的困扰。</p><p>因此，建立一套高效的养老院管理系统是非常必要的。该系统可以实现对养老机构的信息化管理，包括老人入住、床位管理、医疗护理、膳食管理、活动安排、员工考勤、财务管理等方面。通过系统优化管理流程，提高服务质量，满足老年人的需求，保障老年人的权益和福利。</p><hr><h1 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h1><p><strong>系统的目标和用途：</strong></p><ul><li>我们开发的后台系统旨在提供一个高效、可靠且易于管理的解决方案，以支持各种业务需求。<br>它是一个基于云架构的后台管理平台，用于管理和监控用户数据、处理业务逻辑以及支持关键决策。</li></ul><p><strong>系统的主要功能和特点：</strong></p><ul><li>我们的后台系统具备多个核心功能，包括用户管理、权限控制、数据存储与处理、业务逻辑实现、报表生成等。<br>它提供了一个直观友好的用户界面，使用户能够轻松地管理、操作和监控系统中的数据和业务流程。</li></ul><p><strong>系统采用的技术架构：</strong></p><ul><li>我们的后台系统采用了现代化的技术架构，使用了流行的编程语言和开发框架，如 <code>javaWeb语言</code>和 <code>SpingMvc框架</code>。<br>数据库方面，我们选择了高性能和可扩展的关系型数据库 <code>MySQL</code>。<br>系统的架构设计注重可扩展性、灵活性和高性能，以满足不断增长的用户需求。</li></ul><p><strong>各个模块和功能的介绍：</strong></p><ul><li>后台系统由多个模块组成，每个模块都承担着不同的功能。比如,用户管理模块用于管理用户信息和权限控制，<br>数据存储与处理模块负责数据的存储、处理和分析，业务逻辑实现模块用于实现具体的业务流程，报表生成模块能够生成丰富的报表和图表,订单管理模块用于管理物品或药品的采购,入库,领用等等。可以帮助管理员更好地管理和处理订单业务流程，提高订单处理效率和精度。同时，该模块还提供了丰富的报表和统计功能，以帮助管理员对订单数据进行分析和决策等。这些模块之间通过API进行交互，形成一个完整的后台系统。  </li></ul><p><strong>数据管理的方法和策略：</strong></p><ul><li>我们的后台系统采用了严格的数据管理方法和策略，确保数据的完整性和可靠性。<br>数据以结构化的方式存储在数据库中，并进行定  期备份和冗余存储。同时，我们也注重数据安全性，采取了多层次的访问控制和加密措施，以保护用户数据的安全。</li></ul><p><strong>性能优化措施：</strong></p><ul><li>为了提高系统的性能和响应速度，我们采取了多项性能优化措施。例如，对数据库查询进行优化，使用缓存技术加速数据访问，<br>优化代码以减少资源消耗等。这些措施使得系统能够处理大规模数据和高并发请求，保证系统的高效率和稳定性。</li></ul><p><strong>用户界面设计：</strong></p><ul><li>后台系统的用户界面经过精心设计，注重用户体验和易用性。它采用直观的布局和交互方式，<br>使用户能够快速上手并轻松完成各种 操作。用户界面提供了丰富的功能和操作方式，如数据查看、编辑、导出等，以满足不同用户的需求。</li></ul><p><strong>测试和部署：</strong></p><ul><li>为了保证系统的质量和稳定性，我们采用了全面的测试策略。包括单元测试、集成测试、自动化测试等多种测试方法，<br>以确保系统 在各种场景下都能正常运行。在部署方面，我们使用容器化技术和自动化部署流程，实现快速、可靠的系统部署。</li></ul><p><strong>成果和效益：</strong></p><ul><li>我们的后台系统已经取得了显著的成果和效益。通过提供高效的数据管理和业务流程支持，<br>我们帮助用户提升了工作效率，降低了成本，改进了决策过程。</li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 养老院管理系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpingMvc </tag>
+            
+            <tag> ElementUi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
