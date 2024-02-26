@@ -31,33 +31,6 @@
     
     
     <entry>
-      <title>ECharts</title>
-      <link href="/2024/01/22/echarts/"/>
-      <url>/2024/01/22/echarts/</url>
-      
-        <content type="html"><![CDATA[<h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p><ul><li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li><li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li><li>③创建一个dom元素 用来放置图表 </li><li>④配置Echarts属性  </li></ul><p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p><ul><li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改<table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/Echarts.png"></td>    </tr></tbody></table></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> ECharts </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ECharts </tag>
-            
-            <tag> JavaScript </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Nvm工具</title>
       <link href="/2024/01/22/nvm/"/>
       <url>/2024/01/22/nvm/</url>
@@ -77,6 +50,33 @@
             <tag> node </tag>
             
             <tag> Nvm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ECharts</title>
+      <link href="/2024/01/22/echarts/"/>
+      <url>/2024/01/22/echarts/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p><ul><li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li><li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li><li>③创建一个dom元素 用来放置图表 </li><li>④配置Echarts属性  </li></ul><p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p><ul><li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改<table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/Echarts.png"></td>    </tr></tbody></table></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> ECharts </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ECharts </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
       
