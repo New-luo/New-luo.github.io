@@ -58,33 +58,6 @@
     
     
     <entry>
-      <title>Nvm工具</title>
-      <link href="/2024/01/22/nvm/"/>
-      <url>/2024/01/22/nvm/</url>
-      
-        <content type="html"><![CDATA[<h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p><ul><li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li><li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li><li>③创建一个dom元素 用来放置图表 </li><li>④配置Echarts属性  </li></ul><p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p><ul><li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改<table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/Echarts.png"></td>    </tr></tbody></table></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> Nvm </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> node </tag>
-            
-            <tag> Nvm </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>ECharts</title>
       <link href="/2024/01/22/echarts/"/>
       <url>/2024/01/22/echarts/</url>
@@ -112,25 +85,25 @@
     
     
     <entry>
-      <title>养老院管理系统</title>
-      <link href="/2024/01/20/blog/"/>
-      <url>/2024/01/20/blog/</url>
+      <title>Nvm工具</title>
+      <link href="/2024/01/22/nvm/"/>
+      <url>/2024/01/22/nvm/</url>
       
-        <content type="html"><![CDATA[<h1 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h1><p>随着人口老龄化趋势的加剧，养老问题已经成为全球面临的重大社会问题之一。在中国，老年人口数量庞大，养老需求迅速增长，但养老服务水平和质量普遍存在不足，尤其是养老机构管理问题。当前，许多养老机构存在管理混乱、服务质量低下、人才短缺等问题，不能及时满足老年人的需求，给老年人的身体和心理健康带来了很大的困扰。</p><p>因此，建立一套高效的养老院管理系统是非常必要的。该系统可以实现对养老机构的信息化管理，包括老人入住、床位管理、医疗护理、膳食管理、活动安排、员工考勤、财务管理等方面。通过系统优化管理流程，提高服务质量，满足老年人的需求，保障老年人的权益和福利。</p><hr><h1 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h1><p><strong>系统的目标和用途：</strong></p><ul><li>我们开发的后台系统旨在提供一个高效、可靠且易于管理的解决方案，以支持各种业务需求。<br>它是一个基于云架构的后台管理平台，用于管理和监控用户数据、处理业务逻辑以及支持关键决策。</li></ul><p><strong>系统的主要功能和特点：</strong></p><ul><li>我们的后台系统具备多个核心功能，包括用户管理、权限控制、数据存储与处理、业务逻辑实现、报表生成等。<br>它提供了一个直观友好的用户界面，使用户能够轻松地管理、操作和监控系统中的数据和业务流程。</li></ul><p><strong>系统采用的技术架构：</strong></p><ul><li>我们的后台系统采用了现代化的技术架构，使用了流行的编程语言和开发框架，如 <code>javaWeb语言</code>和 <code>SpingMvc框架</code>。<br>数据库方面，我们选择了高性能和可扩展的关系型数据库 <code>MySQL</code>。<br>系统的架构设计注重可扩展性、灵活性和高性能，以满足不断增长的用户需求。</li></ul><p><strong>各个模块和功能的介绍：</strong></p><ul><li>后台系统由多个模块组成，每个模块都承担着不同的功能。比如,用户管理模块用于管理用户信息和权限控制，<br>数据存储与处理模块负责数据的存储、处理和分析，业务逻辑实现模块用于实现具体的业务流程，报表生成模块能够生成丰富的报表和图表,订单管理模块用于管理物品或药品的采购,入库,领用等等。可以帮助管理员更好地管理和处理订单业务流程，提高订单处理效率和精度。同时，该模块还提供了丰富的报表和统计功能，以帮助管理员对订单数据进行分析和决策等。这些模块之间通过API进行交互，形成一个完整的后台系统。  </li></ul><p><strong>数据管理的方法和策略：</strong></p><ul><li>我们的后台系统采用了严格的数据管理方法和策略，确保数据的完整性和可靠性。<br>数据以结构化的方式存储在数据库中，并进行定  期备份和冗余存储。同时，我们也注重数据安全性，采取了多层次的访问控制和加密措施，以保护用户数据的安全。</li></ul><p><strong>性能优化措施：</strong></p><ul><li>为了提高系统的性能和响应速度，我们采取了多项性能优化措施。例如，对数据库查询进行优化，使用缓存技术加速数据访问，<br>优化代码以减少资源消耗等。这些措施使得系统能够处理大规模数据和高并发请求，保证系统的高效率和稳定性。</li></ul><p><strong>用户界面设计：</strong></p><ul><li>后台系统的用户界面经过精心设计，注重用户体验和易用性。它采用直观的布局和交互方式，<br>使用户能够快速上手并轻松完成各种 操作。用户界面提供了丰富的功能和操作方式，如数据查看、编辑、导出等，以满足不同用户的需求。</li></ul><p><strong>测试和部署：</strong></p><ul><li>为了保证系统的质量和稳定性，我们采用了全面的测试策略。包括单元测试、集成测试、自动化测试等多种测试方法，<br>以确保系统 在各种场景下都能正常运行。在部署方面，我们使用容器化技术和自动化部署流程，实现快速、可靠的系统部署。</li></ul><p><strong>成果和效益：</strong></p><ul><li>我们的后台系统已经取得了显著的成果和效益。通过提供高效的数据管理和业务流程支持，<br>我们帮助用户提升了工作效率，降低了成本，改进了决策过程。</li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p><ul><li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li><li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li><li>③创建一个dom元素 用来放置图表 </li><li>④配置Echarts属性  </li></ul><p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p><ul><li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改<table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/Echarts.png"></td>    </tr></tbody></table></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
           
-          <category> 养老院管理系统 </category>
+          <category> Nvm </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> SpingMvc </tag>
+            <tag> node </tag>
             
-            <tag> ElementUi </tag>
+            <tag> Nvm </tag>
             
         </tags>
       
@@ -158,6 +131,33 @@
             <tag> vue </tag>
             
             <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>养老院管理系统</title>
+      <link href="/2024/01/20/blog/"/>
+      <url>/2024/01/20/blog/</url>
+      
+        <content type="html"><![CDATA[<h1 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h1><p>随着人口老龄化趋势的加剧，养老问题已经成为全球面临的重大社会问题之一。在中国，老年人口数量庞大，养老需求迅速增长，但养老服务水平和质量普遍存在不足，尤其是养老机构管理问题。当前，许多养老机构存在管理混乱、服务质量低下、人才短缺等问题，不能及时满足老年人的需求，给老年人的身体和心理健康带来了很大的困扰。</p><p>因此，建立一套高效的养老院管理系统是非常必要的。该系统可以实现对养老机构的信息化管理，包括老人入住、床位管理、医疗护理、膳食管理、活动安排、员工考勤、财务管理等方面。通过系统优化管理流程，提高服务质量，满足老年人的需求，保障老年人的权益和福利。</p><hr><h1 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h1><p><strong>系统的目标和用途：</strong></p><ul><li>我们开发的后台系统旨在提供一个高效、可靠且易于管理的解决方案，以支持各种业务需求。<br>它是一个基于云架构的后台管理平台，用于管理和监控用户数据、处理业务逻辑以及支持关键决策。</li></ul><p><strong>系统的主要功能和特点：</strong></p><ul><li>我们的后台系统具备多个核心功能，包括用户管理、权限控制、数据存储与处理、业务逻辑实现、报表生成等。<br>它提供了一个直观友好的用户界面，使用户能够轻松地管理、操作和监控系统中的数据和业务流程。</li></ul><p><strong>系统采用的技术架构：</strong></p><ul><li>我们的后台系统采用了现代化的技术架构，使用了流行的编程语言和开发框架，如 <code>javaWeb语言</code>和 <code>SpingMvc框架</code>。<br>数据库方面，我们选择了高性能和可扩展的关系型数据库 <code>MySQL</code>。<br>系统的架构设计注重可扩展性、灵活性和高性能，以满足不断增长的用户需求。</li></ul><p><strong>各个模块和功能的介绍：</strong></p><ul><li>后台系统由多个模块组成，每个模块都承担着不同的功能。比如,用户管理模块用于管理用户信息和权限控制，<br>数据存储与处理模块负责数据的存储、处理和分析，业务逻辑实现模块用于实现具体的业务流程，报表生成模块能够生成丰富的报表和图表,订单管理模块用于管理物品或药品的采购,入库,领用等等。可以帮助管理员更好地管理和处理订单业务流程，提高订单处理效率和精度。同时，该模块还提供了丰富的报表和统计功能，以帮助管理员对订单数据进行分析和决策等。这些模块之间通过API进行交互，形成一个完整的后台系统。  </li></ul><p><strong>数据管理的方法和策略：</strong></p><ul><li>我们的后台系统采用了严格的数据管理方法和策略，确保数据的完整性和可靠性。<br>数据以结构化的方式存储在数据库中，并进行定  期备份和冗余存储。同时，我们也注重数据安全性，采取了多层次的访问控制和加密措施，以保护用户数据的安全。</li></ul><p><strong>性能优化措施：</strong></p><ul><li>为了提高系统的性能和响应速度，我们采取了多项性能优化措施。例如，对数据库查询进行优化，使用缓存技术加速数据访问，<br>优化代码以减少资源消耗等。这些措施使得系统能够处理大规模数据和高并发请求，保证系统的高效率和稳定性。</li></ul><p><strong>用户界面设计：</strong></p><ul><li>后台系统的用户界面经过精心设计，注重用户体验和易用性。它采用直观的布局和交互方式，<br>使用户能够快速上手并轻松完成各种 操作。用户界面提供了丰富的功能和操作方式，如数据查看、编辑、导出等，以满足不同用户的需求。</li></ul><p><strong>测试和部署：</strong></p><ul><li>为了保证系统的质量和稳定性，我们采用了全面的测试策略。包括单元测试、集成测试、自动化测试等多种测试方法，<br>以确保系统 在各种场景下都能正常运行。在部署方面，我们使用容器化技术和自动化部署流程，实现快速、可靠的系统部署。</li></ul><p><strong>成果和效益：</strong></p><ul><li>我们的后台系统已经取得了显著的成果和效益。通过提供高效的数据管理和业务流程支持，<br>我们帮助用户提升了工作效率，降低了成本，改进了决策过程。</li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 养老院管理系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpingMvc </tag>
+            
+            <tag> ElementUi </tag>
             
         </tags>
       
