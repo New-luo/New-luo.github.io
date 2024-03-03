@@ -170,8 +170,7 @@
         </a>
     </li>
 </ul> -->
-
-<!-- 支持二级菜单特性 罗 shw2018 modify 2019.09.17  -->
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
 <ul class="right nav-menu">
     
@@ -285,8 +284,124 @@
             <i id="searchIcon" class="fa fa-search" title="搜索"></i>
         </a>
     </li>
-
 </ul>
+
+<!-- 支持二级菜单特性 罗 shw2018 modify 2019.09.17  -->
+<!-- <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/AV" class="waves-effect waves-light">
+              
+                <i class="fa fa-music"></i>
+              
+              <span>视听</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/contact" class="waves-effect waves-light">
+              
+                <i class="fa fa-envelope"></i>
+              
+              <span>留言板</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+
+</ul> -->
 
 <div id="mobile-nav" class="side-nav sidenav">
 
@@ -302,7 +417,7 @@
 
     
 
-    <ul class="menu-list mobile-menu-list">
+    <!-- <ul class="menu-list mobile-menu-list">
         
         <li>
             <a href="/" class="waves-effect waves-light">
@@ -384,12 +499,13 @@
             </a>
         </li>
         
-    </ul>
+    </ul> -->
 
    
    
 <!-- 支持二级菜单特性 罗 shw2018 modify 2019.09.17  -->
-<!-- <ul class="menu-list mobile-menu-list">
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<ul class="menu-list mobile-menu-list">
     
         <li class="m-nav-item">
                 
@@ -487,8 +603,8 @@
                 <i class="fa fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
-        
-    </ul> -->
+      
+</ul>
 
 </div>
 
@@ -732,14 +848,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        3.3k
+                        3.5k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        15 分
+                        16 分
                     </div>
                     
                 
@@ -1270,7 +1386,33 @@ public List&lt;User&gt; getEricUserList(){
     return userServiceDao.list();
 }
 页面通过项目ip/druid/访问监控页面</code></pre><hr>
-<blockquote>
+<h1 id="spingBoot文件上传配置"><a href="#spingBoot文件上传配置" class="headerlink" title="spingBoot文件上传配置"></a>spingBoot文件上传配置</h1><p>1.添加配置和配置文件<br>添加application.properties配置</p>
+<pre><code>upload.filePath=E:\\pic\\  //这是文件上传的路径必须存在这个pic文件夹
+upload.excelPath=d:\\parkPic\\Excel\\  //这是导入导出的保存位置
+upload.prefix=http://localhost:8081/   //项目ip</code></pre><p>添加配置回显图片</p>
+<pre><code> package com.example.NLuo.CorsConfig;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+    /*
+    * 该类对文件路径进行转换映射
+    * */
+    @Configuration
+    public class MyMvcConfig implements WebMvcConfigurer {
+        //获取application.yml文件中自定义参数upload.filePath
+        @Value("${upload.filePath}")
+        private String filePath;
+        @Override
+        public void addResourceHandlers(ResourceHandlerRegistry registry) {
+            /*
+            * 映射路径
+            *   下面配置的映射路径，即图片的访问路径
+            *   当访问/upload/为前缀的图片时，系统会到filePath对应的路径找图片
+            * */
+            registry.addResourceHandler("/upload/**").addResourceLocations("file:" + filePath);
+        }
+    }</code></pre><blockquote>
 <p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
 </blockquote>
 <p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p>
@@ -1917,19 +2059,19 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/01/22/echarts/">
+                <a href="/2024/01/22/nvm/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="ECharts">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Nvm工具">
                         
-                        <span class="card-title">ECharts</span>
+                        <span class="card-title">Nvm工具</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            提供了丰富的图表类型和交互能力，使用户能够通过简单的配置生成各种各样的图表，包括但不限于折线图、柱状图、散点图、饼图、雷达图、地图等。ECharts 遵循 Apache-2.0 开源协议，免费商用。
+                            提供了控制node版本
                         
                     </div>
                     <div class="publish-info">
@@ -1940,8 +2082,8 @@ gitment.render('gitment-content');
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/ECharts/" class="post-category" target="_blank">
-                                    ECharts
+                            <a href="/categories/Nvm/" class="post-category" target="_blank">
+                                    Nvm
                                 </a>
                             
                             
@@ -1951,12 +2093,12 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ECharts/" target="_blank">
-                        <span class="chip bg-color">ECharts</span>
+                    <a href="/tags/node/" target="_blank">
+                        <span class="chip bg-color">node</span>
                     </a>
                     
-                    <a href="/tags/JavaScript/" target="_blank">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/Nvm/" target="_blank">
+                        <span class="chip bg-color">Nvm</span>
                     </a>
                     
                 </div>
@@ -2131,7 +2273,7 @@ gitment.render('gitment-content');
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">8.8k</span> 字
+                <span class="white-color">9k</span> 字
             
 
             
