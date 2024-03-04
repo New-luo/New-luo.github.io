@@ -848,14 +848,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        3.5k
+                        3.8k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        16 分
+                        17 分
                     </div>
                     
                 
@@ -1412,7 +1412,28 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
             * */
             registry.addResourceHandler("/upload/**").addResourceLocations("file:" + filePath);
         }
-    }</code></pre><blockquote>
+    }</code></pre><p>/*</p>
+<h1 id="shiro实现权限控制步骤"><a href="#shiro实现权限控制步骤" class="headerlink" title="shiro实现权限控制步骤"></a>shiro实现权限控制步骤</h1><pre><code>1.加入3个依赖
+     shiro-core（shiro内核依赖）
+     shiro-spring(shiro与spring整合依赖)
+     spring-boot-starter-aop(spring aop依赖)
+ 2.创建shiro对应的配置文件
+    1.ShiroConfig(文件名称可以自定义，配置类),自动加载，并执行shiroFilter方法，排除不需要权限的URL
+        同时启动注解功能（即运行authorizationAttributeSourceAdvisor方法）
+        该类启动时执行一次，后面不再执行该类
+    2.UserRealm(文件名称可以自定义，实现用户登录与权限控制)
+ 3.在需要进行权限控制的方法前面加上对应的注解
+    @RequiresPermissions("权限字符串")
+    当访问路径对应的方法前面有@RequiresPermissions注解时，系统自动调用UserRealm类的AuthorizationInfo方法进行权限验证，
+    如果有权限那么程序正常执行，如果没有权限，系统会自动抛出异常,UserExceptionHandler类会自动处理异常
+ 4.创建全局异常处理类
+    UserExceptionHandler:当用户点击没有权限的菜单（按钮）时，进行统一的异常处理，并返回错误信息
+ 5.对应5个表
+    User表:用户表
+    Role表：角色表
+    user_role表:用户角色表
+    permission表:系统权限表
+    role_permission表:角色权限表</code></pre><blockquote>
 <p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
 </blockquote>
 <p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p>
@@ -2273,7 +2294,7 @@ gitment.render('gitment-content');
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">9k</span> 字
+                <span class="white-color">9.3k</span> 字
             
 
             
