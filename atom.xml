@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/New-luo/New-luo.github.io.git/"/>
-  <updated>2024-03-04T03:54:59.796Z</updated>
+  <updated>2024-03-04T08:27:18.368Z</updated>
   <id>https://github.com/New-luo/New-luo.github.io.git/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>常用的方法和注解</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/03/04/demo/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/03/04/demo/</id>
+    <published>2024-03-04T08:00:00.000Z</published>
+    <updated>2024-03-04T08:27:18.368Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;微信开发者工具&quot;&gt;&lt;a href=&quot;#微信开发者工具&quot; class=&quot;headerlink&quot; title=&quot;微信开发者工具&quot;&gt;&lt;/a&gt;微信开发者工具&lt;/h1&gt;&lt;h1 id=&quot;项目基本组成结构&quot;&gt;&lt;a href=&quot;#项目基本组成结构&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/SpingBoot/"/>
+    
+    
+      <category term="SpingMvc" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingMvc/"/>
+    
+      <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingBoot/"/>
+    
+      <category term="jsp" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/jsp/"/>
+    
+      <category term="vue" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>微信小程序</title>
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/02/27/wxml/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/02/27/wxml/</id>
     <published>2024-02-27T01:00:00.000Z</published>
-    <updated>2024-03-04T03:54:59.796Z</updated>
+    <updated>2024-03-04T08:27:46.405Z</updated>
     
     <summary type="html">
     
@@ -49,7 +81,7 @@
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/02/23/spingboot/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/02/23/spingboot/</id>
     <published>2024-02-23T01:00:00.000Z</published>
-    <updated>2024-03-04T03:54:23.596Z</updated>
+    <updated>2024-03-04T07:46:13.979Z</updated>
     
     <summary type="html">
     
@@ -73,39 +105,11 @@
   </entry>
   
   <entry>
-    <title>ECharts</title>
-    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/22/echarts/"/>
-    <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/22/echarts/</id>
-    <published>2024-01-22T01:00:00.000Z</published>
-    <updated>2024-03-04T03:54:34.960Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;ECharts&quot;&gt;&lt;a href=&quot;#ECharts&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="ECharts" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/ECharts/"/>
-    
-    
-      <category term="ECharts" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/ECharts/"/>
-    
-      <category term="JavaScript" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Nvm工具</title>
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/22/nvm/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/22/nvm/</id>
     <published>2024-01-22T01:00:00.000Z</published>
-    <updated>2024-03-04T03:54:29.189Z</updated>
+    <updated>2024-03-04T08:27:10.397Z</updated>
     
     <summary type="html">
     
@@ -129,11 +133,39 @@
   </entry>
   
   <entry>
+    <title>ECharts</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/22/echarts/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/22/echarts/</id>
+    <published>2024-01-22T01:00:00.000Z</published>
+    <updated>2024-03-04T08:27:05.174Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;ECharts&quot;&gt;&lt;a href=&quot;#ECharts&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="ECharts" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/ECharts/"/>
+    
+    
+      <category term="ECharts" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/ECharts/"/>
+    
+      <category term="JavaScript" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>养老院管理系统</title>
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog/</id>
     <published>2024-01-20T01:00:00.000Z</published>
-    <updated>2024-03-04T03:54:43.982Z</updated>
+    <updated>2024-03-04T08:27:22.706Z</updated>
     
     <summary type="html">
     
@@ -161,7 +193,7 @@
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog-open-source/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog-open-source/</id>
     <published>2024-01-20T01:00:00.000Z</published>
-    <updated>2024-03-04T03:54:52.290Z</updated>
+    <updated>2024-03-04T08:27:27.054Z</updated>
     
     <summary type="html">
     

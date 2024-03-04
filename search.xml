@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>常用的方法和注解</title>
+      <link href="/2024/03/04/demo/"/>
+      <url>/2024/03/04/demo/</url>
+      
+        <content type="html"><![CDATA[<h1 id="微信开发者工具"><a href="#微信开发者工具" class="headerlink" title="微信开发者工具"></a>微信开发者工具</h1><h1 id="项目基本组成结构"><a href="#项目基本组成结构" class="headerlink" title="项目基本组成结构"></a>项目基本组成结构</h1><pre><code>1.pages用来存放所有小程序的页面2.utils用来存放工具性质的模块(例如：格式化时间的自定义模块)3.app.js小程序项目的入口文件4.app.json小程序项目的全局配置文件  1.pages记录当前小程序所有页面的路径  2.window全局定义所有页面的背景色和文字颜色  3.style全局定义小程序组件使用的样式版本  4.sitemapLocation指明sitemap.json的位置5.app.wxss小程序项目全局样式文件6.project.config.json项目的配置文件     1.记录个性化设置配置     2.setting中保存编译相关的配置     3.projectname保存项目名称     4.appid小程序账号id7.sitemap.json用来配置小程序及页面是否允许被微信索引   allow允许索引  disallow不允许</code></pre><hr><h1 id="小程序页面都存放在pages目录中-以单独的文件夹存在"><a href="#小程序页面都存放在pages目录中-以单独的文件夹存在" class="headerlink" title="小程序页面都存放在pages目录中,以单独的文件夹存在"></a>小程序页面都存放在pages目录中,以单独的文件夹存在</h1><pre><code>每个页面4个基本文件组成分别为1..js文件(页面的脚本文件,存放页面的数据，事件处理函数等)2..json文件（当前页面的配置文件，配置窗口的外观,表现等）3..wxml文件（页面的模块结构文件）4..wxss文件（当前页面的样式表文件）</code></pre><hr><h1 id="新建小程序页面"><a href="#新建小程序页面" class="headerlink" title="新建小程序页面"></a>新建小程序页面</h1><pre><code>  1.在app.json-pages中新增页面的存放路径</code></pre><h1 id="wxml和html的区别"><a href="#wxml和html的区别" class="headerlink" title="wxml和html的区别"></a>wxml和html的区别</h1><pre><code>1.标签名称不同html(div,span,img,a)wxml(view,text,image,navigator)2.属性节点不同&lt;-a href="#"&gt;超链接&lt;-/a&gt;&lt;navigator url="/pages/hemo/hemo"&gt;&lt;/navigator&gt;3.提供类似vue的模版数据绑定列表渲染条件渲染</code></pre><h1 id="wxss和css的区别"><a href="#wxss和css的区别" class="headerlink" title="wxss和css的区别"></a>wxss和css的区别</h1><pre><code>1.新增rpx尺寸单位2.提供全局样式(app.wxss)和局部样式(页面的.wxss)3.wxss仅支持部分css选择器</code></pre><h1 id="常用的视图容器类组件"><a href="#常用的视图容器类组件" class="headerlink" title="常用的视图容器类组件"></a>常用的视图容器类组件</h1><pre><code>  1.view  普通视图区域  类似于html的div是一个快级元素  实现页面布局  2.scroll-view  scroll-y 属性：允许纵向滚动  scroll-x 属性：允许横向滚动  注意：使用竖向滚动时，必须给 scroll-view 一个固定高度  滚动视图区域  滚动列表效果  3.swiper和swiper-itew  轮播图容器和轮播图item组件</code></pre><h1 id="SpringBoot整合使用druid连接池"><a href="#SpringBoot整合使用druid连接池" class="headerlink" title="SpringBoot整合使用druid连接池"></a>SpringBoot整合使用druid连接池</h1><p> 1.添加MybatisPlusConfig类</p><pre><code>   //启动事务   @EnableTransactionManagement        /*            配置文件            使用了@Configuration注解的类就是配置类，程序启动时系统会自动执行，            该注解的作用就是把以往的xml文件转换为java类            @Bean注解，就是配置一个bean，相当于mvc项目中的xml配置文件中bean        */        @Configuration        public class MybatisPlusConfig {            /**            * 分页插件,创建一个分页的拦截器            */            @Bean            public PaginationInterceptor paginationInterceptor() {                return  new PaginationInterceptor();            }        }</code></pre><p>  2.添加以下依赖</p><pre><code>&lt;!-- mysql驱动 --&gt;    &lt;dependency&gt;        &lt;groupId&gt;mysql&lt;/groupId&gt;        &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;        &lt;version&gt;5.1.48&lt;/version&gt;    &lt;/dependency&gt;    &lt;!-- mybatis-plus --&gt;    &lt;dependency&gt;        &lt;groupId&gt;com.baomidou&lt;/groupId&gt;        &lt;artifactId&gt;mybatis-plus-boot-starter&lt;/artifactId&gt;        &lt;version&gt;3.3.1&lt;/version&gt;    &lt;/dependency&gt;    &lt;!--druid连接池--&gt;    &lt;dependency&gt;        &lt;groupId&gt;com.alibaba&lt;/groupId&gt;        &lt;artifactId&gt;druid-spring-boot-starter&lt;/artifactId&gt;        &lt;version&gt;1.1.20&lt;/version&gt;    &lt;/dependency&gt;</code></pre><p>  3.添加配置</p><pre><code>#所有参数的配置，冒号后面必须有一个空格        #配置tomcat的端口        server:        port: 8888        servlet:            #项目访问路径            context-path: /            #session的有效期为30分钟，m分钟，s秒            session:            timeout: 30m        #数据源配置        spring:        datasource:            driver-class-name: com.mysql.jdbc.Driver            url: jdbc:mysql://localhost:3306/boot?allowMultiQueries=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;allowPublicKeyRetrieval=true            username: root            password: 11111111            druid:            #配置监控url            stat-view-servlet:                #连接池的监控地址                url-pattern: /druid/*                #登录名                login-username: root                #登录密码                login-password: 123456                enabled: true            #初始值            initial-size: 10            #最大连接数            max-active: 100            #最小连接数            min-idle: 10            #最大等待时间            max-wait: 60000            pool-prepared-statements: true            max-pool-prepared-statement-per-connection-size: 20            time-between-eviction-runs-millis: 60000            min-evictable-idle-time-millis: 300000            #validation-query: SELECT 1 FROM DUAL            validation-query: SELECT 1 'X'            test-while-idle: true            test-on-borrow: false            test-on-return: false            filters: stat,wall,slf4j        mvc:            #配置jsp文件存放的根路径            view:            #后缀            suffix: .jsp            #前缀            prefix: /WEB-INF/jsp/        http:            #设置字符编码            encoding:            charset: UTF-8#mybatis配置(dao在启动类用@MapperScan注解配置)mybatis-plus:#mybatis的映射文件路径，放在resources的子文件夹内mapper-locations: classpath:mapper/*.xml#配置别名，javabean的包路径type-aliases-package: com.lgr.bootdemo1.entityglobal-config:    #数据库相关配置    db-config:    #主键类型  AUTO:"数据库ID自增", INPUT:"用户输入ID", ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";    id-type: AUTO    #字段策略 IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断"),NOT_EMPTY:"非空判断"    field-strategy: NOT_NULL    #驼峰下划线转换    column-underline: true    #逻辑已删除值(默认为 1)    logic-delete-value: 1    #逻辑未删除值(默认为 0)    logic-not-delete-value: 0    banner: falseconfiguration:    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射    map-underscore-to-camel-case: true    cache-enabled: false    call-setters-on-nulls: true    jdbc-type-for-null: 'null'    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl</code></pre><p>3.添加dao包新建BatchDAO类继承bean(extends BaseMapper<batchvo>) 添加service包下面添加impl包<br>4.service添加BatchServiceDAO类继承bean(extends IService<batchvo>)<br>5.impl包添加BatchServiceDaoImpl继承service包下面的BatchServiceDAO类(implements BatchServiceDAO )<br>6.BatchServiceDaoImpl引入dao</batchvo></batchvo></p><pre><code>@AutowiredBatchDAO batchDAO;</code></pre><p>7.右键生成方法注意添加启动事务@Transactional(查询操作外)<br>比如无条件查询表</p><pre><code>@Overridepublic List&lt;User&gt; list() {    return userDao.selectList(null);}</code></pre><p>8.添加控制器引入</p><pre><code>@Autowiredprivate UserServiceDao userServiceDao;实现方法 @RequestMapping("/list")public List&lt;User&gt; getEricUserList(){    return userServiceDao.list();}页面通过项目ip/druid/访问监控页面</code></pre><hr><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> SpingBoot </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpingMvc </tag>
+            
+            <tag> SpingBoot </tag>
+            
+            <tag> jsp </tag>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>微信小程序</title>
       <link href="/2024/02/27/wxml/"/>
       <url>/2024/02/27/wxml/</url>
@@ -58,33 +89,6 @@
     
     
     <entry>
-      <title>ECharts</title>
-      <link href="/2024/01/22/echarts/"/>
-      <url>/2024/01/22/echarts/</url>
-      
-        <content type="html"><![CDATA[<h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p><ul><li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li><li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li><li>③创建一个dom元素 用来放置图表 </li><li>④配置Echarts属性  </li></ul><p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p><ul><li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改<table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/Echarts.png"></td>    </tr></tbody></table></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      <categories>
-          
-          <category> ECharts </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ECharts </tag>
-            
-            <tag> JavaScript </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Nvm工具</title>
       <link href="/2024/01/22/nvm/"/>
       <url>/2024/01/22/nvm/</url>
@@ -104,6 +108,33 @@
             <tag> node </tag>
             
             <tag> Nvm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ECharts</title>
+      <link href="/2024/01/22/echarts/"/>
+      <url>/2024/01/22/echarts/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p><ul><li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li><li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li><li>③创建一个dom元素 用来放置图表 </li><li>④配置Echarts属性  </li></ul><p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p><ul><li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改<table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/Echarts.png"></td>    </tr></tbody></table></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> ECharts </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ECharts </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
       
