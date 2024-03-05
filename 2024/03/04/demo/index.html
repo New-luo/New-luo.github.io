@@ -9,11 +9,11 @@
     <meta name="keywords" content="常用的方法和注解, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="微信开发者工具项目基本组成结构1.pages用来存放所有小程序的页面
-2.utils用来存放工具性质的模块(例如：格式化时间的自定义模块)
-3.app.js小程序项目的入口文件
-4.app.json小程序项目的全局配置文件
-  1.page">
+    <meta name="description" content="助解javabean@data无需编写get和set方法
+@TableName(&#34;表的名称&#34;)
+@TableId(&#34;表明这个属性对应数据库id字段为0数据库设置自动递增&#34;)
+@TableFild(&#34;属性对应表字段&#34;);
+添加参数exist=">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -690,7 +690,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/5.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -808,10 +808,6 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/SpingMvc/" target="_blank">
-                                <span class="chip bg-color">SpingMvc</span>
-                            </a>
-                        
                             <a href="/tags/vue/" target="_blank">
                                 <span class="chip bg-color">vue</span>
                             </a>
@@ -822,6 +818,10 @@
                         
                             <a href="/tags/jsp/" target="_blank">
                                 <span class="chip bg-color">jsp</span>
+                            </a>
+                        
+                            <a href="/tags/SpingMvc/" target="_blank">
+                                <span class="chip bg-color">SpingMvc</span>
                             </a>
                         
                     </div>
@@ -858,14 +858,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.6k
+                        450
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        6 分
+                        1 分
                     </div>
                     
                 
@@ -882,185 +882,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="微信开发者工具"><a href="#微信开发者工具" class="headerlink" title="微信开发者工具"></a>微信开发者工具</h1><h1 id="项目基本组成结构"><a href="#项目基本组成结构" class="headerlink" title="项目基本组成结构"></a>项目基本组成结构</h1><pre><code>1.pages用来存放所有小程序的页面
-2.utils用来存放工具性质的模块(例如：格式化时间的自定义模块)
-3.app.js小程序项目的入口文件
-4.app.json小程序项目的全局配置文件
-  1.pages记录当前小程序所有页面的路径
-  2.window全局定义所有页面的背景色和文字颜色
-  3.style全局定义小程序组件使用的样式版本
-  4.sitemapLocation指明sitemap.json的位置
-5.app.wxss小程序项目全局样式文件
-6.project.config.json项目的配置文件
-     1.记录个性化设置配置
-     2.setting中保存编译相关的配置
-     3.projectname保存项目名称
-     4.appid小程序账号id
-7.sitemap.json用来配置小程序及页面是否允许被微信索引 
-  allow允许索引
-  disallow不允许</code></pre><hr>
-<h1 id="小程序页面都存放在pages目录中-以单独的文件夹存在"><a href="#小程序页面都存放在pages目录中-以单独的文件夹存在" class="headerlink" title="小程序页面都存放在pages目录中,以单独的文件夹存在"></a>小程序页面都存放在pages目录中,以单独的文件夹存在</h1><pre><code>每个页面4个基本文件组成分别为
-1..js文件(页面的脚本文件,存放页面的数据，事件处理函数等)
-2..json文件（当前页面的配置文件，配置窗口的外观,表现等）
-3..wxml文件（页面的模块结构文件）
-4..wxss文件（当前页面的样式表文件）</code></pre><hr>
-<h1 id="新建小程序页面"><a href="#新建小程序页面" class="headerlink" title="新建小程序页面"></a>新建小程序页面</h1><pre><code>  1.在app.json-pages中新增页面的存放路径</code></pre><h1 id="wxml和html的区别"><a href="#wxml和html的区别" class="headerlink" title="wxml和html的区别"></a>wxml和html的区别</h1><pre><code>1.标签名称不同
-html(div,span,img,a)
-wxml(view,text,image,navigator)
-2.属性节点不同
-&lt;-a href="#"&gt;超链接&lt;-/a&gt;
-&lt;navigator url="/pages/hemo/hemo"&gt;&lt;/navigator&gt;
-3.提供类似vue的模版
-数据绑定
-列表渲染
-条件渲染</code></pre><h1 id="wxss和css的区别"><a href="#wxss和css的区别" class="headerlink" title="wxss和css的区别"></a>wxss和css的区别</h1><pre><code>1.新增rpx尺寸单位
-2.提供全局样式(app.wxss)和局部样式(页面的.wxss)
-3.wxss仅支持部分css选择器</code></pre><h1 id="常用的视图容器类组件"><a href="#常用的视图容器类组件" class="headerlink" title="常用的视图容器类组件"></a>常用的视图容器类组件</h1><pre><code>  1.view
-  普通视图区域
-  类似于html的div是一个快级元素
-  实现页面布局
-  2.scroll-view
-  scroll-y 属性：允许纵向滚动
-  scroll-x 属性：允许横向滚动
-  注意：使用竖向滚动时，必须给 scroll-view 一个固定高度
-  滚动视图区域
-  滚动列表效果
-  3.swiper和swiper-itew
-  轮播图容器和轮播图item组件</code></pre><h1 id="SpringBoot整合使用druid连接池"><a href="#SpringBoot整合使用druid连接池" class="headerlink" title="SpringBoot整合使用druid连接池"></a>SpringBoot整合使用druid连接池</h1><p> 1.添加MybatisPlusConfig类</p>
-<pre><code>   //启动事务
-   @EnableTransactionManagement
-        /*
-            配置文件
-            使用了@Configuration注解的类就是配置类，程序启动时系统会自动执行，
-            该注解的作用就是把以往的xml文件转换为java类
-            @Bean注解，就是配置一个bean，相当于mvc项目中的xml配置文件中bean
-        */
-        @Configuration
-        public class MybatisPlusConfig {
-            /**
-            * 分页插件,创建一个分页的拦截器
-            */
-            @Bean
-            public PaginationInterceptor paginationInterceptor() {
-                return  new PaginationInterceptor();
-            }
-        }</code></pre><p>  2.添加以下依赖</p>
-<pre><code>&lt;!-- mysql驱动 --&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;mysql&lt;/groupId&gt;
-        &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
-        &lt;version&gt;5.1.48&lt;/version&gt;
-    &lt;/dependency&gt;
-    &lt;!-- mybatis-plus --&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.baomidou&lt;/groupId&gt;
-        &lt;artifactId&gt;mybatis-plus-boot-starter&lt;/artifactId&gt;
-        &lt;version&gt;3.3.1&lt;/version&gt;
-    &lt;/dependency&gt;
-    &lt;!--druid连接池--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.alibaba&lt;/groupId&gt;
-        &lt;artifactId&gt;druid-spring-boot-starter&lt;/artifactId&gt;
-        &lt;version&gt;1.1.20&lt;/version&gt;
-    &lt;/dependency&gt;</code></pre><p>  3.添加配置</p>
-<pre><code>#所有参数的配置，冒号后面必须有一个空格
-        #配置tomcat的端口
-        server:
-        port: 8888
-        servlet:
-            #项目访问路径
-            context-path: /
-            #session的有效期为30分钟，m分钟，s秒
-            session:
-            timeout: 30m
-        #数据源配置
-        spring:
-        datasource:
-            driver-class-name: com.mysql.jdbc.Driver
-            url: jdbc:mysql://localhost:3306/boot?allowMultiQueries=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;allowPublicKeyRetrieval=true
-            username: root
-            password: 11111111
-            druid:
-            #配置监控url
-            stat-view-servlet:
-                #连接池的监控地址
-                url-pattern: /druid/*
-                #登录名
-                login-username: root
-                #登录密码
-                login-password: 123456
-                enabled: true
-            #初始值
-            initial-size: 10
-            #最大连接数
-            max-active: 100
-            #最小连接数
-            min-idle: 10
-            #最大等待时间
-            max-wait: 60000
-            pool-prepared-statements: true
-            max-pool-prepared-statement-per-connection-size: 20
-            time-between-eviction-runs-millis: 60000
-            min-evictable-idle-time-millis: 300000
-            #validation-query: SELECT 1 FROM DUAL
-            validation-query: SELECT 1 'X'
-            test-while-idle: true
-            test-on-borrow: false
-            test-on-return: false
-            filters: stat,wall,slf4j
-        mvc:
-            #配置jsp文件存放的根路径
-            view:
-            #后缀
-            suffix: .jsp
-            #前缀
-            prefix: /WEB-INF/jsp/
-        http:
-            #设置字符编码
-            encoding:
-            charset: UTF-8
-
-#mybatis配置(dao在启动类用@MapperScan注解配置)
-mybatis-plus:
-#mybatis的映射文件路径，放在resources的子文件夹内
-mapper-locations: classpath:mapper/*.xml
-#配置别名，javabean的包路径
-type-aliases-package: com.lgr.bootdemo1.entity
-global-config:
-    #数据库相关配置
-    db-config:
-    #主键类型  AUTO:"数据库ID自增", INPUT:"用户输入ID", ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";
-    id-type: AUTO
-    #字段策略 IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断"),NOT_EMPTY:"非空判断"
-    field-strategy: NOT_NULL
-    #驼峰下划线转换
-    column-underline: true
-    #逻辑已删除值(默认为 1)
-    logic-delete-value: 1
-    #逻辑未删除值(默认为 0)
-    logic-not-delete-value: 0
-    banner: false
-configuration:
-    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射
-    map-underscore-to-camel-case: true
-    cache-enabled: false
-    call-setters-on-nulls: true
-    jdbc-type-for-null: 'null'
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl</code></pre><p>3.添加dao包新建BatchDAO类继承bean(extends BaseMapper<batchvo>) 添加service包下面添加impl包<br>4.service添加BatchServiceDAO类继承bean(extends IService<batchvo>)<br>5.impl包添加BatchServiceDaoImpl继承service包下面的BatchServiceDAO类(implements BatchServiceDAO )<br>6.BatchServiceDaoImpl引入dao</batchvo></batchvo></p>
-<pre><code>@Autowired
-BatchDAO batchDAO;</code></pre><p>7.右键生成方法注意添加启动事务@Transactional(查询操作外)<br>比如无条件查询表</p>
-<pre><code>@Override
-public List&lt;User&gt; list() {
-    return userDao.selectList(null);
-}</code></pre><p>8.添加控制器引入</p>
-<pre><code>@Autowired
-private UserServiceDao userServiceDao;
-实现方法
- @RequestMapping("/list")
-public List&lt;User&gt; getEricUserList(){
-    return userServiceDao.list();
-}
-页面通过项目ip/druid/访问监控页面</code></pre><hr>
+                <h1 id="助解"><a href="#助解" class="headerlink" title="助解"></a>助解</h1><h3 id="javabean"><a href="#javabean" class="headerlink" title="javabean"></a>javabean</h3><pre><code>@data无需编写get和set方法
+@TableName("表的名称")
+@TableId("表明这个属性对应数据库id字段为0数据库设置自动递增")
+@TableFild("属性对应表字段");
+添加参数exist=false表明这个属性可有可无
+注:如果数据库表没有这个字段然后bean没有添加这个属性会报错</code></pre><h3 id="dao"><a href="#dao" class="headerlink" title="dao"></a>dao</h3><pre><code>@Repository用于标识数据访问组件，表明该类是用来访问数据库或执行持久化操作的
+@Mapper 用于标识一个接口是 MyBatis 的 Mapper 接口，提供 SQL 映射操作</code></pre><h3 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h3><h3 id="impl"><a href="#impl" class="headerlink" title="impl"></a>impl</h3><pre><code>@Service("Service层的类名"),表明该类扫描注入service
+@Autowired自动装配
+@Override标记方法</code></pre><h3 id="Controller"><a href="#Controller" class="headerlink" title="Controller"></a>Controller</h3><pre><code>@RestController标记为这个类为Controller
+@RequestMapping("/xxx")这个类的方法get/post
+@Value("yml配置的属性名")获取这个属性的值
+@ResponseBody json格式返回
+@PostMapping POST请求
+@GetMapping  get请求</code></pre><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><pre><code>@Configuration 注解用于标识一个类是配置类，通过定义 
+@Bean 方法来配置和管理 Spring 应用程序中的 bean。  
+@EnableTransactionManagement 启动事务  </code></pre><h1 id="对应继承关系"><a href="#对应继承关系" class="headerlink" title="对应继承关系"></a>对应继承关系</h1><pre><code>javabean一般继承implements Serializable
+dao一般继承extends BaseMapper&lt;javabean名称&gt;
+Service一般继承extends IService&lt;javabean名称&gt;
+impl一般继承extends ServiceImpl&lt;dao, javabean&gt; implements Service</code></pre><hr>
 <blockquote>
 <p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
 </blockquote>
@@ -1659,7 +1499,7 @@ gitment.render('gitment-content');
                 <a href="/2024/03/04/demo/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/12.jpg" class="responsive-img" alt="常用的方法和注解">
+                        <img src="/medias/banner/5.jpg" class="responsive-img" alt="常用的方法和注解">
                         
                         <span class="card-title">常用的方法和注解</span>
                     </div>
@@ -1667,7 +1507,7 @@ gitment.render('gitment-content');
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            提升自己
+                            巩固复习
                         
                     </div>
                     <div class="publish-info">
@@ -1690,10 +1530,6 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SpingMvc/" target="_blank">
-                        <span class="chip bg-color">SpingMvc</span>
-                    </a>
-                    
                     <a href="/tags/vue/" target="_blank">
                         <span class="chip bg-color">vue</span>
                     </a>
@@ -1704,6 +1540,10 @@ gitment.render('gitment-content');
                     
                     <a href="/tags/jsp/" target="_blank">
                         <span class="chip bg-color">jsp</span>
+                    </a>
+                    
+                    <a href="/tags/SpingMvc/" target="_blank">
+                        <span class="chip bg-color">SpingMvc</span>
                     </a>
                     
                 </div>
@@ -1930,7 +1770,7 @@ gitment.render('gitment-content');
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">10.9k</span> 字
+                <span class="white-color">9.8k</span> 字
             
 
             
