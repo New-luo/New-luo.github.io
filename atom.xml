@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/New-luo/New-luo.github.io.git/"/>
-  <updated>2024-03-05T02:39:32.012Z</updated>
+  <updated>2024-03-08T02:44:13.137Z</updated>
   <id>https://github.com/New-luo/New-luo.github.io.git/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/03/04/demo/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/03/04/demo/</id>
     <published>2024-03-04T08:00:00.000Z</published>
-    <updated>2024-03-05T02:39:32.012Z</updated>
+    <updated>2024-03-08T02:44:13.137Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;h1 id=&quot;助解&quot;&gt;&lt;a href=&quot;#助解&quot; class=&quot;headerlink&quot; title=&quot;助解&quot;&gt;&lt;/a&gt;助解&lt;/h1&gt;&lt;h3 id=&quot;javabean&quot;&gt;&lt;a href=&quot;#javabean&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;注解&quot;&gt;&lt;a href=&quot;#注解&quot; class=&quot;headerlink&quot; title=&quot;注解&quot;&gt;&lt;/a&gt;注解&lt;/h1&gt;&lt;h3 id=&quot;javabean&quot;&gt;&lt;a href=&quot;#javabean&quot; class=&quot;headerlink&quot;
         
       
     
@@ -38,13 +38,41 @@
       <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/SpingBoot/"/>
     
     
+      <category term="SpingMvc" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingMvc/"/>
+    
       <category term="vue" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/vue/"/>
     
       <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingBoot/"/>
     
       <category term="jsp" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/jsp/"/>
     
-      <category term="SpingMvc" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingMvc/"/>
+  </entry>
+  
+  <entry>
+    <title>sql语句</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/03/04/spl/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/03/04/spl/</id>
+    <published>2024-03-04T08:00:00.000Z</published>
+    <updated>2024-03-08T02:54:52.698Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;语句&quot;&gt;&lt;a href=&quot;#语句&quot; class=&quot;headerlink&quot; title=&quot;语句&quot;&gt;&lt;/a&gt;语句&lt;/h1&gt;&lt;h3 id=&quot;sql分类&quot;&gt;&lt;a href=&quot;#sql分类&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="sql" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/sql/"/>
+    
+    
+      <category term="Mysql" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Mysql/"/>
+    
+      <category term="Navicat" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Navicat/"/>
     
   </entry>
   
@@ -53,7 +81,7 @@
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/02/27/wxml/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/02/27/wxml/</id>
     <published>2024-02-27T01:00:00.000Z</published>
-    <updated>2024-03-04T08:27:46.405Z</updated>
+    <updated>2024-03-08T11:30:58.965Z</updated>
     
     <summary type="html">
     
@@ -67,12 +95,40 @@
     
     </summary>
     
-      <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/SpingBoot/"/>
+      <category term="小程序项目" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B9%E7%9B%AE/"/>
     
     
-      <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingBoot/"/>
+      <category term="wxml" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/wxml/"/>
     
-      <category term="jsp" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/jsp/"/>
+      <category term="微信小程序" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UNI-APP</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/02/27/uni-app/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/02/27/uni-app/</id>
+    <published>2024-02-27T01:00:00.000Z</published>
+    <updated>2024-03-08T11:32:33.885Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;微信开发者工具&quot;&gt;&lt;a href=&quot;#微信开发者工具&quot; class=&quot;headerlink&quot; title=&quot;微信开发者工具&quot;&gt;&lt;/a&gt;微信开发者工具&lt;/h1&gt;&lt;h1 id=&quot;项目基本组成结构&quot;&gt;&lt;a href=&quot;#项目基本组成结构&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="UNI-APP" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/UNI-APP/"/>
+    
+    
+      <category term="VUE" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/VUE/"/>
+    
+      <category term="UNI-APP" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/UNI-APP/"/>
     
   </entry>
   
@@ -81,7 +137,7 @@
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/02/23/spingboot/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/02/23/spingboot/</id>
     <published>2024-02-23T01:00:00.000Z</published>
-    <updated>2024-03-04T07:46:13.979Z</updated>
+    <updated>2024-03-05T05:47:15.867Z</updated>
     
     <summary type="html">
     
@@ -161,34 +217,6 @@
   </entry>
   
   <entry>
-    <title>vue</title>
-    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog-open-source/"/>
-    <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog-open-source/</id>
-    <published>2024-01-20T01:00:00.000Z</published>
-    <updated>2024-03-04T08:27:27.054Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;vue封装数据发送后台&quot;&gt;&lt;a href=&quot;#vue封装数据发送后台&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="vue" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/vue/"/>
-    
-    
-      <category term="vue" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/vue/"/>
-    
-      <category term="笔记" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>养老院管理系统</title>
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog/</id>
@@ -213,6 +241,34 @@
       <category term="SpingMvc" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingMvc/"/>
     
       <category term="ElementUi" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/ElementUi/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog-open-source/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/20/blog-open-source/</id>
+    <published>2024-01-20T01:00:00.000Z</published>
+    <updated>2024-03-04T08:27:27.054Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;vue封装数据发送后台&quot;&gt;&lt;a href=&quot;#vue封装数据发送后台&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="vue" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/vue/"/>
+    
+    
+      <category term="vue" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/vue/"/>
+    
+      <category term="笔记" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   

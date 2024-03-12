@@ -6,14 +6,14 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="微信小程序, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
+    <meta name="keywords" content="sql语句, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="微信开发者工具项目基本组成结构1.pages用来存放所有小程序的页面
-2.utils用来存放工具性质的模块(例如：格式化时间的自定义模块)
-3.app.js小程序项目的入口文件
-4.app.json小程序项目的全局配置文件
-  1.page">
+    <meta name="description" content="语句sql分类@data无需编写get和set方法
+@TableName(&#34;表的名称&#34;)
+@TableId(&#34;表明这个属性对应数据库id字段为0数据库设置自动递增&#34;)
+@TableFild(&#34;属性对应表字段&#34;);
+添加参数exist=fal">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>微信小程序 | 晨曦之旅</title>
+    <title>sql语句 | 晨曦之旅</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -690,13 +690,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        微信小程序
+                        sql语句
                     </div>
                 </div>
             </div>
@@ -808,12 +808,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/wxml/" target="_blank">
-                                <span class="chip bg-color">wxml</span>
+                            <a href="/tags/Mysql/" target="_blank">
+                                <span class="chip bg-color">Mysql</span>
                             </a>
                         
-                            <a href="/tags/微信小程序/" target="_blank">
-                                <span class="chip bg-color">微信小程序</span>
+                            <a href="/tags/Navicat/" target="_blank">
+                                <span class="chip bg-color">Navicat</span>
                             </a>
                         
                     </div>
@@ -824,8 +824,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/小程序项目/" class="post-category" target="_blank">
-                                小程序项目
+                            <a href="/categories/sql/" class="post-category" target="_blank">
+                                sql
                             </a>
                         
                     </div>
@@ -836,7 +836,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-02-27
+                    2024-03-04
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -850,14 +850,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.3k
+                        463
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        5 分
+                        1 分
                     </div>
                     
                 
@@ -874,95 +874,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="微信开发者工具"><a href="#微信开发者工具" class="headerlink" title="微信开发者工具"></a>微信开发者工具</h1><h1 id="项目基本组成结构"><a href="#项目基本组成结构" class="headerlink" title="项目基本组成结构"></a>项目基本组成结构</h1><pre><code>1.pages用来存放所有小程序的页面
-2.utils用来存放工具性质的模块(例如：格式化时间的自定义模块)
-3.app.js小程序项目的入口文件
-4.app.json小程序项目的全局配置文件
-  1.pages记录当前小程序所有页面的路径
-  2.window全局定义所有页面的背景色和文字颜色
-  3.style全局定义小程序组件使用的样式版本
-  4.sitemapLocation指明sitemap.json的位置
-5.app.wxss小程序项目全局样式文件
-6.project.config.json项目的配置文件
-     1.记录个性化设置配置
-     2.setting中保存编译相关的配置
-     3.projectname保存项目名称
-     4.appid小程序账号id
-7.sitemap.json用来配置小程序及页面是否允许被微信索引 
-  allow允许索引
-  disallow不允许</code></pre><hr>
-<h1 id="小程序页面都存放在pages目录中-以单独的文件夹存在"><a href="#小程序页面都存放在pages目录中-以单独的文件夹存在" class="headerlink" title="小程序页面都存放在pages目录中,以单独的文件夹存在"></a>小程序页面都存放在pages目录中,以单独的文件夹存在</h1><pre><code>每个页面4个基本文件组成分别为
-1..js文件(页面的脚本文件,存放页面的数据，事件处理函数等)
-2..json文件（当前页面的配置文件，配置窗口的外观,表现等）
-3..wxml文件（页面的模块结构文件）
-4..wxss文件（当前页面的样式表文件）</code></pre><hr>
-<h1 id="新建小程序页面"><a href="#新建小程序页面" class="headerlink" title="新建小程序页面"></a>新建小程序页面</h1><pre><code>  1.在app.json-pages中新增页面的存放路径</code></pre><h1 id="wxml和html的区别"><a href="#wxml和html的区别" class="headerlink" title="wxml和html的区别"></a>wxml和html的区别</h1><pre><code>1.标签名称不同
-html(div,span,img,a)
-wxml(view,text,image,navigator)
-2.属性节点不同
-&lt;-a href="#"&gt;超链接&lt;-/a&gt;
-&lt;navigator url="/pages/hemo/hemo"&gt;&lt;/navigator&gt;
-3.提供类似vue的模版
-数据绑定
-列表渲染
-条件渲染</code></pre><h1 id="wxss和css的区别"><a href="#wxss和css的区别" class="headerlink" title="wxss和css的区别"></a>wxss和css的区别</h1><pre><code>1.新增rpx尺寸单位
-2.提供全局样式(app.wxss)和局部样式(页面的.wxss)
-3.wxss仅支持部分css选择器</code></pre><h1 id="常用的视图容器类组件"><a href="#常用的视图容器类组件" class="headerlink" title="常用的视图容器类组件"></a>常用的视图容器类组件</h1><pre><code>  1.view
-  普通视图区域
-  类似于html的div是一个快级元素
-  实现页面布局
-
-  2.scroll-view
-  scroll-y 属性：允许纵向滚动
-  scroll-x 属性：允许横向滚动
-  注意：使用竖向滚动时，必须给 scroll-view 一个固定高度
-  滚动视图区域
-  滚动列表效果
-
-  3.swiper和swiper-itew
-  轮播图容器和轮播图item组件
-  swiper 组件的常用属性
-  属性                         类型        默认值           说明
-  indicator-dots               boolean    false            是否显示面板指示点
-  indicator-color              color      rgba(0, 0, 0,.3) 指示点颜色
-  indicator-active-color       color      #000000          当前选中的指示点颜色
-  autoplay                     boolean    false            是否自动切换
-  interval                     number     5000             自动切换时间间隔
-  circular                     boolean    false            是否采用衔接滑动
-
-  4.常用的基础内容组件
-  text
-  文本组件
-  类似于 HTML 中的 span 标签，是一个行内元素
-  通过text组件的selectable属性,实现长按选中文本内容的效果
-
-
-  rich-text
-  富文本组件支持把 HTML 字符串渲染为 WXML 结构
-  nodes属性节点，把 HTML 字符串渲染为对应的 UI 结构
-
-  5.其它常用组件
-  ① button按钮组件
-  通过 type 属性指定按钮颜色类型
-  size="mini" 小尺寸按钮
-  plain 镂空按钮(无参)
-  功能比 HTML 中的 button 按钮丰富
-  通过 open-type属性可以调用微信提供的各种功能(客服、转发、获取用户授权、获取用户信息等)
-
-  ② image图片组件image组件默认宽度约300px、高度约240px
-    image 组件的 mode 属性用来指定图片的裁剪和缩放模式，常用的 mode 属性值如下：
-    mode 值        说明
-    scaleToFill   （默认值）缩放模式，不保持纵横比缩放图片，
-                   使图片的宽高完全拉伸至填满image元素
-    aspectFit      缩放模式，保持纵横比缩放图片，使图片的长边能完全显示出来。
-                   也就是说，可以完整地将图片显示出来。
-    aspectFill     缩放模式，保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，
-                   图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。
-    widthFix       缩放模式，宽度不变，高度自动变化，保持原图宽高比不变
-    heightFix      缩放模式，高度不变，宽度自动变化，保持原图宽高比不变
-
-  ③ navigator页面导航组件类似于 HTML 中的 a 链接</code></pre><h1 id="程序的宿主环境-API"><a href="#程序的宿主环境-API" class="headerlink" title="程序的宿主环境 - API"></a>程序的宿主环境 - API</h1><pre><code>1. 小程序 API 概述小程序中的 API 是由宿主环境提供的， 通过这些丰富的小程序API，
-   开发者可以方便的调用微信提供的能力，例如：获取用户信息、本地存储、支付功能等。</code></pre><hr>
+                <h1 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h1><h3 id="sql分类"><a href="#sql分类" class="headerlink" title="sql分类"></a>sql分类</h3><pre><code>@data无需编写get和set方法
+@TableName("表的名称")
+@TableId("表明这个属性对应数据库id字段为0数据库设置自动递增")
+@TableFild("属性对应表字段");
+添加参数exist=false表明这个属性可有可无
+注:如果数据库表没有这个字段然后bean没有添加这个属性会报错</code></pre><h3 id="dao"><a href="#dao" class="headerlink" title="dao"></a>dao</h3><pre><code>@Repository用于标识数据访问组件，表明该类是用来访问数据库或执行持久化操作的
+@Mapper 用于标识一个接口是 MyBatis 的 Mapper 接口，提供 SQL 映射操作</code></pre><h3 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h3><h3 id="impl"><a href="#impl" class="headerlink" title="impl"></a>impl</h3><pre><code>@Service("Service层的类名"),表明该类扫描注入service
+@Autowired自动装配
+@Override标记方法</code></pre><h3 id="Controller"><a href="#Controller" class="headerlink" title="Controller"></a>Controller</h3><pre><code>@Controller标记为这个类为Controller(jsp项目)
+@RestController标记为这个类为Controller
+@RequestMapping("/xxx")这个类的方法get/post
+@Value("yml配置的属性名")获取这个属性的值
+@ResponseBody json格式返回
+@PostMapping POST请求
+@GetMapping  get请求</code></pre><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><pre><code>@Configuration 注解用于标识一个类是配置类，通过定义 
+@Bean 方法来配置和管理 Spring 应用程序中的 bean。  
+@EnableTransactionManagement 启动事务  </code></pre><h1 id="对应继承关系"><a href="#对应继承关系" class="headerlink" title="对应继承关系"></a>对应继承关系</h1><pre><code>javabean一般继承implements Serializable
+dao一般继承extends BaseMapper&lt;javabean名称&gt;
+Service一般继承extends IService&lt;javabean名称&gt;
+impl一般继承extends ServiceImpl&lt;dao, javabean&gt; implements Service</code></pre><hr>
 <blockquote>
 <p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
 </blockquote>
@@ -1142,7 +1073,7 @@ wxml(view,text,image,navigator)
                     </span>
                     <a href="https://github.com/New-luo/New-luo.github.io.git" class="b-link-green">晨曦之旅</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2024/02/27/wxml/" class="b-link-green">微信小程序</a>
+                    <a href="/2024/03/04/spl/" class="b-link-green">sql语句</a>
                 </p>
             </div>
 
@@ -1165,7 +1096,7 @@ wxml(view,text,image,navigator)
         repo: 'New-luo.github.io',
         owner: 'New-luo',
         admin: ["New-luo"],
-        id: '2024/02/27/wxml/',
+        id: '2024/03/04/spl/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1184,7 +1115,7 @@ wxml(view,text,image,navigator)
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Tue Feb 27 2024 09:00:00 GMT+0800',
+    id: 'Mon Mar 04 2024 16:00:00 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -1208,9 +1139,9 @@ gitment.render('gitment-content');
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://github.com/New-luo/New-luo.github.io.git/2024/02/27/wxml/';
-        this.page.identifier = '/2024/02/27/wxml/';
-        this.page.title = '微信小程序';
+        this.page.url = 'https://github.com/New-luo/New-luo.github.io.git/2024/03/04/spl/';
+        this.page.identifier = '/2024/03/04/spl/';
+        this.page.title = 'sql语句';
     };
     let disqus_shortname = '';
 
@@ -1557,18 +1488,18 @@ gitment.render('gitment-content');
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/03/04/spl/">
+                <a href="/2024/03/04/demo/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/1.jpg" class="responsive-img" alt="sql语句">
+                        <img src="/medias/banner/5.jpg" class="responsive-img" alt="常用的方法和注解">
                         
-                        <span class="card-title">sql语句</span>
+                        <span class="card-title">常用的方法和注解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基础的sqp语句
+                            巩固复习
                         
                     </div>
                     <div class="publish-info">
@@ -1579,8 +1510,8 @@ gitment.render('gitment-content');
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/sql/" class="post-category" target="_blank">
-                                    sql
+                            <a href="/categories/SpingBoot/" class="post-category" target="_blank">
+                                    SpingBoot
                                 </a>
                             
                             
@@ -1590,12 +1521,20 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Mysql/" target="_blank">
-                        <span class="chip bg-color">Mysql</span>
+                    <a href="/tags/SpingMvc/" target="_blank">
+                        <span class="chip bg-color">SpingMvc</span>
                     </a>
                     
-                    <a href="/tags/Navicat/" target="_blank">
-                        <span class="chip bg-color">Navicat</span>
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
+                    </a>
+                    
+                    <a href="/tags/SpingBoot/" target="_blank">
+                        <span class="chip bg-color">SpingBoot</span>
+                    </a>
+                    
+                    <a href="/tags/jsp/" target="_blank">
+                        <span class="chip bg-color">jsp</span>
                     </a>
                     
                 </div>
@@ -1609,18 +1548,18 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/02/27/uni-app/">
+                <a href="/2024/02/27/wxml/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/8.jpg" class="responsive-img" alt="UNI-APP">
+                        <img src="/medias/banner/2.jpg" class="responsive-img" alt="微信小程序">
                         
-                        <span class="card-title">UNI-APP</span>
+                        <span class="card-title">微信小程序</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            学习UNI-APP
+                            学习wxml
                         
                     </div>
                     <div class="publish-info">
@@ -1631,8 +1570,8 @@ gitment.render('gitment-content');
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/UNI-APP/" class="post-category" target="_blank">
-                                    UNI-APP
+                            <a href="/categories/小程序项目/" class="post-category" target="_blank">
+                                    小程序项目
                                 </a>
                             
                             
@@ -1642,12 +1581,12 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/VUE/" target="_blank">
-                        <span class="chip bg-color">VUE</span>
+                    <a href="/tags/wxml/" target="_blank">
+                        <span class="chip bg-color">wxml</span>
                     </a>
                     
-                    <a href="/tags/UNI-APP/" target="_blank">
-                        <span class="chip bg-color">UNI-APP</span>
+                    <a href="/tags/微信小程序/" target="_blank">
+                        <span class="chip bg-color">微信小程序</span>
                     </a>
                     
                 </div>
