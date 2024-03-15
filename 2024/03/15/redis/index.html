@@ -6,15 +6,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Nvm工具, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
+    <meta name="keywords" content="Redis, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="ECharts如何使用Echarts：
-
-①获取Echarts ：在官网下载Echarts版本 或 npm下载 
-②引入Echarts ：script引入 或者 vue在入口文件里引用 
-③创建一个dom元素 用来放置图表 
-④配置Echa">
+    <meta name="description" content="Redis安装Window下安装：
+下载地址：https://github.com/MSOpenTech/redis/releases
+选择64位的ZIP压缩包点击下载，下载完成后解压，并将解压后的文件夹重命名为redis，方便后面使用运行">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Nvm工具 | 晨曦之旅</title>
+    <title>Redis | 晨曦之旅</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -691,13 +688,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Nvm工具
+                        Redis
                     </div>
                 </div>
             </div>
@@ -809,12 +806,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/node/" target="_blank">
-                                <span class="chip bg-color">node</span>
+                            <a href="/tags/Redis/" target="_blank">
+                                <span class="chip bg-color">Redis</span>
                             </a>
                         
-                            <a href="/tags/Nvm/" target="_blank">
-                                <span class="chip bg-color">Nvm</span>
+                            <a href="/tags/Redisclient/" target="_blank">
+                                <span class="chip bg-color">Redisclient</span>
                             </a>
                         
                     </div>
@@ -825,8 +822,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Nvm/" class="post-category" target="_blank">
-                                Nvm
+                            <a href="/categories/Redis/" class="post-category" target="_blank">
+                                Redis
                             </a>
                         
                     </div>
@@ -837,7 +834,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-01-22
+                    2024-03-15
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -851,7 +848,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        387
+                        447
                     </div>
                     
 
@@ -875,36 +872,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p>
-<ul>
-<li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li>
-<li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li>
-<li>③创建一个dom元素 用来放置图表 </li>
-<li>④配置Echarts属性  </li>
-</ul>
-<p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p>
-<ul>
-<li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改
+                <h1 id="Redis安装"><a href="#Redis安装" class="headerlink" title="Redis安装"></a>Redis安装</h1><pre><code>Window下安装：
+下载地址：https://github.com/MSOpenTech/redis/releases
+选择64位的ZIP压缩包点击下载，下载完成后解压，并将解压后的文件夹重命名为redis，方便后面使用</code></pre><h1 id="运行Redis服务"><a href="#运行Redis服务" class="headerlink" title="运行Redis服务"></a>运行Redis服务</h1><pre><code>1、使用cmd命令行进入解压后的redis目录
+2、在redis目录下 运行redis-server redis.windows.conf，启动redis服务，此时当关闭命令窗口redis服务也会关闭，其中后面的redis.window.conf可以省略</code></pre><hr>
+<h1 id="将Redis配成windows服务"><a href="#将Redis配成windows服务" class="headerlink" title="将Redis配成windows服务"></a>将Redis配成windows服务</h1><pre><code>可以将redis服务安装成windows服务，在redis目录下的命令窗口输入：redis-server --service-install redis.windows.conf即可
+redis-server --service-uninstall 删除服务
+查看服务是否配置成功，右键计算机—管理—服务，查找是否有Redis服务，如果启动，代表windows上的redis服务已经配置成功，redis服务已经启动。      </code></pre><h1 id="Redis命令"><a href="#Redis命令" class="headerlink" title="Redis命令"></a>Redis命令</h1><pre><code> 启动本机Redis客户端：redis–cli ，此命令连接到本机的Redis服务，同时用PING命令检测本机Redis服务是否启动
+ 连接远程Redis服务： redis–cli –h host –p port –a “password”
+ 其中host为远程主机IP地址
+ Port为远程Redis服务端口号
+ Password为远程Redis服务密码</code></pre><h1 id="redisclient安装"><a href="#redisclient安装" class="headerlink" title="redisclient安装"></a>redisclient安装</h1><pre><code>下载解压</code></pre><h1 id="redisclient连接Redis"><a href="#redisclient连接Redis" class="headerlink" title="redisclient连接Redis"></a>redisclient连接Redis</h1>
 <table>
   <tbody><tr>
-    <td><img width="100" src="/medias/avatars/Echarts.png"></td>  
+    <td><img width="100" src="/medias/avatars/redis.png"></td>  
   </tr>
 </tbody></table>
 
 
 
-</li>
-</ul>
 <hr>
-<p><strong>简单使用方法：</strong></p>
-<ol>
-<li><code>star</code> 本项目</li>
-<li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li>
-<li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li>
-<li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li>
-<li>修改配置信息，改成自己的信息</li>
-<li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li>
-</ol>
 <blockquote>
 <p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
 </blockquote>
@@ -1084,7 +1071,7 @@
                     </span>
                     <a href="https://github.com/New-luo/New-luo.github.io.git" class="b-link-green">晨曦之旅</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2024/01/22/nvm/" class="b-link-green">Nvm工具</a>
+                    <a href="/2024/03/15/redis/" class="b-link-green">Redis</a>
                 </p>
             </div>
 
@@ -1107,7 +1094,7 @@
         repo: 'New-luo.github.io',
         owner: 'New-luo',
         admin: ["New-luo"],
-        id: '2024/01/22/nvm/',
+        id: '2024/03/15/redis/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1126,7 +1113,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Mon Jan 22 2024 09:00:00 GMT+0800',
+    id: 'Fri Mar 15 2024 09:00:00 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -1150,9 +1137,9 @@ gitment.render('gitment-content');
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://github.com/New-luo/New-luo.github.io.git/2024/01/22/nvm/';
-        this.page.identifier = '/2024/01/22/nvm/';
-        this.page.title = 'Nvm工具';
+        this.page.url = 'https://github.com/New-luo/New-luo.github.io.git/2024/03/15/redis/';
+        this.page.identifier = '/2024/03/15/redis/';
+        this.page.title = 'Redis';
     };
     let disqus_shortname = '';
 
@@ -1495,49 +1482,51 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/01/22/echarts/">
+                <a href="/2024/03/15/redis/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/9.jpg" class="responsive-img" alt="ECharts">
+                        <img src="/medias/banner/6.jpg" class="responsive-img" alt="Redis">
                         
-                        <span class="card-title">ECharts</span>
+                        <span class="card-title">Redis</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            提供了丰富的图表类型和交互能力，使用户能够通过简单的配置生成各种各样的图表，包括但不限于折线图、柱状图、散点图、饼图、雷达图、地图等。ECharts 遵循 Apache-2.0 开源协议，免费商用。
+                            Redis安装与配置
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2024-01-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-03-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/ECharts/" class="post-category" target="_blank">
-                                    ECharts
+                            <a href="/categories/Redis/" class="post-category" target="_blank">
+                                    Redis
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ECharts/" target="_blank">
-                        <span class="chip bg-color">ECharts</span>
+                    <a href="/tags/Redis/" target="_blank">
+                        <span class="chip bg-color">Redis</span>
                     </a>
                     
-                    <a href="/tags/JavaScript/" target="_blank">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/Redisclient/" target="_blank">
+                        <span class="chip bg-color">Redisclient</span>
                     </a>
                     
                 </div>
@@ -1551,30 +1540,30 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/01/20/blog/">
+                <a href="/2024/03/04/demo/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/10.jpg" class="responsive-img" alt="养老院管理系统">
+                        <img src="/medias/banner/5.jpg" class="responsive-img" alt="常用的方法和注解">
                         
-                        <span class="card-title">养老院管理系统</span>
+                        <span class="card-title">常用的方法和注解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在中国，老年人口数量庞大，养老需求迅速增长，但养老服务水平和质量普遍存在不足，尤其是养老机构管理问题。
+                            巩固复习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-01-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-03-04
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/养老院管理系统/" class="post-category" target="_blank">
-                                    养老院管理系统
+                            <a href="/categories/SpingBoot/" class="post-category" target="_blank">
+                                    SpingBoot
                                 </a>
                             
                             
@@ -1588,8 +1577,16 @@ gitment.render('gitment-content');
                         <span class="chip bg-color">SpingMvc</span>
                     </a>
                     
-                    <a href="/tags/ElementUi/" target="_blank">
-                        <span class="chip bg-color">ElementUi</span>
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
+                    </a>
+                    
+                    <a href="/tags/SpingBoot/" target="_blank">
+                        <span class="chip bg-color">SpingBoot</span>
+                    </a>
+                    
+                    <a href="/tags/jsp/" target="_blank">
+                        <span class="chip bg-color">jsp</span>
                     </a>
                     
                 </div>

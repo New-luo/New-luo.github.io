@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Redis</title>
+      <link href="/2024/03/15/redis/"/>
+      <url>/2024/03/15/redis/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Redis安装"><a href="#Redis安装" class="headerlink" title="Redis安装"></a>Redis安装</h1><pre><code>Window下安装：下载地址：https://github.com/MSOpenTech/redis/releases选择64位的ZIP压缩包点击下载，下载完成后解压，并将解压后的文件夹重命名为redis，方便后面使用</code></pre><h1 id="运行Redis服务"><a href="#运行Redis服务" class="headerlink" title="运行Redis服务"></a>运行Redis服务</h1><pre><code>1、使用cmd命令行进入解压后的redis目录2、在redis目录下 运行redis-server redis.windows.conf，启动redis服务，此时当关闭命令窗口redis服务也会关闭，其中后面的redis.window.conf可以省略</code></pre><hr><h1 id="将Redis配成windows服务"><a href="#将Redis配成windows服务" class="headerlink" title="将Redis配成windows服务"></a>将Redis配成windows服务</h1><pre><code>可以将redis服务安装成windows服务，在redis目录下的命令窗口输入：redis-server --service-install redis.windows.conf即可redis-server --service-uninstall 删除服务查看服务是否配置成功，右键计算机—管理—服务，查找是否有Redis服务，如果启动，代表windows上的redis服务已经配置成功，redis服务已经启动。      </code></pre><h1 id="Redis命令"><a href="#Redis命令" class="headerlink" title="Redis命令"></a>Redis命令</h1><pre><code> 启动本机Redis客户端：redis–cli ，此命令连接到本机的Redis服务，同时用PING命令检测本机Redis服务是否启动 连接远程Redis服务： redis–cli –h host –p port –a “password” 其中host为远程主机IP地址 Port为远程Redis服务端口号 Password为远程Redis服务密码</code></pre><h1 id="redisclient安装"><a href="#redisclient安装" class="headerlink" title="redisclient安装"></a>redisclient安装</h1><pre><code>下载解压</code></pre><h1 id="redisclient连接Redis"><a href="#redisclient连接Redis" class="headerlink" title="redisclient连接Redis"></a>redisclient连接Redis</h1><table>  <tbody><tr>    <td><img width="100" src="/medias/avatars/redis.png"></td>    </tr></tbody></table><hr><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>        <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Redis </tag>
+            
+            <tag> Redisclient </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>常用的方法和注解</title>
       <link href="/2024/03/04/demo/"/>
       <url>/2024/03/04/demo/</url>
