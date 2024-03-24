@@ -6,15 +6,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Nvm工具, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
+    <meta name="keywords" content="房屋租赁项目, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="ECharts如何使用Echarts：
+    <meta name="description" content="后台(Spingboot)后台项目搭建1.添加依赖(pom.xml)
 
-①获取Echarts ：在官网下载Echarts版本 或 npm下载 
-②引入Echarts ：script引入 或者 vue在入口文件里引用 
-③创建一个dom元素 用来放置图表 
-④配置Echa">
+2.添加配置application.properties或application.yml
+a.#配置tomcat的端口
+server.port=8919
+b.#配置数据">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +22,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Nvm工具 | 晨曦之旅</title>
+    <title>房屋租赁项目 | 晨曦之旅</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -691,13 +691,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/5.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Nvm工具
+                        房屋租赁项目
                     </div>
                 </div>
             </div>
@@ -809,12 +809,32 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/node/" target="_blank">
-                                <span class="chip bg-color">node</span>
+                            <a href="/tags/SpingBoot/" target="_blank">
+                                <span class="chip bg-color">SpingBoot</span>
                             </a>
                         
-                            <a href="/tags/Nvm/" target="_blank">
-                                <span class="chip bg-color">Nvm</span>
+                            <a href="/tags/Mysql/" target="_blank">
+                                <span class="chip bg-color">Mysql</span>
+                            </a>
+                        
+                            <a href="/tags/uniapp/" target="_blank">
+                                <span class="chip bg-color">uniapp</span>
+                            </a>
+                        
+                            <a href="/tags/HBuilder/" target="_blank">
+                                <span class="chip bg-color">HBuilder</span>
+                            </a>
+                        
+                            <a href="/tags/vue-2/" target="_blank">
+                                <span class="chip bg-color">vue 2</span>
+                            </a>
+                        
+                            <a href="/tags/elementui/" target="_blank">
+                                <span class="chip bg-color">elementui</span>
+                            </a>
+                        
+                            <a href="/tags/uView/" target="_blank">
+                                <span class="chip bg-color">uView</span>
                             </a>
                         
                     </div>
@@ -825,8 +845,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Nvm/" class="post-category" target="_blank">
-                                Nvm
+                            <a href="/categories/SpingBoot/" class="post-category" target="_blank">
+                                SpingBoot
                             </a>
                         
                     </div>
@@ -837,7 +857,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-01-22
+                    2024-03-24
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -851,14 +871,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        387
+                        2.2k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        10分
+                        100分
                     </div>
                     
                 
@@ -875,37 +895,367 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="ECharts"><a href="#ECharts" class="headerlink" title="ECharts"></a>ECharts</h1><p><strong>如何使用Echarts：</strong></p>
-<ul>
-<li>①获取Echarts ：在官网下载Echarts版本 或 npm下载 </li>
-<li>②引入Echarts ：script引入 或者 vue在入口文件里引用 </li>
-<li>③创建一个dom元素 用来放置图表 </li>
-<li>④配置Echarts属性  </li>
-</ul>
-<p><strong>Echarts和vue如何从后台数据库获取数据：</strong></p>
-<ul>
-<li>这里介绍两种<br>1.柱状图 2.饼图<br>1.柱状图如图所示分为x轴和y轴,因为我们表查询不止这两个字段所以后端返回数据前端进行封装,可以使用<br>循环列表获取x轴和y轴需要显示的数据保存到新数组修改
-<table>
-  <tbody><tr>
-    <td><img width="100" src="/medias/avatars/Echarts.png"></td>  
-  </tr>
-</tbody></table>
+                <h1 id="后台-Spingboot"><a href="#后台-Spingboot" class="headerlink" title="后台(Spingboot)"></a>后台(Spingboot)</h1><h3 id="后台项目搭建"><a href="#后台项目搭建" class="headerlink" title="后台项目搭建"></a>后台项目搭建</h3><pre><code>1.添加依赖(pom.xml)
 
+2.添加配置application.properties或application.yml
+a.#配置tomcat的端口
+server.port=8919
+b.#配置数据源
+spring.datasource.driver-class-name= com.mysql.jdbc.Driver
+spring.datasource.url= jdbc:mysql://192.168.0.188:3306/house?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false
+spring.datasource.username= root
+spring.datasource.password= 11111111
+c.#mybatis配置
+mybatis-plus.mapper-locations=classpath:mapper/*.xml
+mybatis-plus.type-aliases-package=com.example.house.generator.domain
+mybatis-plus.global-config.db-config.id-type=AUTO
+mybatis-plus.global-config.db-config.field-strategy=NOT_NULL
+mybatis-plus.global-config.db-config.column-underline=true
+mybatis-plus.global-config.db-config.logic-delete-value=1
+mybatis-plus.global-config.db-config.logic-not-delete-value=0
+mybatis-plus.global-config.banner=false
+mybatis-plus.configuration.map-underscore-to-camel-case=true
+mybatis-plus.configuration.cache-enabled=false
+mybatis-plus.configuration.call-setters-on-nulls=true
+mybatis-plus.configuration.jdbc-type-for-null=null
+mybatis-plus.configuration.log-impl=org.apache.ibatis.logging.stdout.StdOutImpl
+d.dao在启动类(项目名Application)用@MapperScan注解配置
+@MapperScan("com.example.house.generator.mapper")
 
+3.新建包(添加配置)
+a.搭建mybatis分页拦截器
+//启动事务
+@EnableTransactionManagement
+使用了@Configuration注解的类就是配置类，程序启动时系统会自动执行，
+该注解的作用就是把以往的xml文件转换为java类 
+@Bean注解，就是配置一个bean，相当于mvc项目中的xml配置文件中bean
+@Bean
+public MybatisPlusInterceptor paginationInterceptor(){
+    MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+    interceptor.addInnerInterceptor(new PaginationInnerInterceptor());
+    return interceptor;
+}
 
-</li>
-</ul>
-<hr>
-<p><strong>简单使用方法：</strong></p>
-<ol>
-<li><code>star</code> 本项目</li>
-<li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li>
-<li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li>
-<li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li>
-<li>修改配置信息，改成自己的信息</li>
-<li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li>
-</ol>
-<blockquote>
+b.配置跨域
+添加@Configuration配置类注解
+@Bean
+public WebMvcConfigurer corsConfigurer() {
+    return new WebMvcConfigurerAdapter() {
+        @Override
+        public void addCorsMappings(CorsRegistry registry) {
+            registry.addMapping("/**")
+                    .allowedOrigins("*")  // 允许访问的域
+                    .allowedMethods("GET","POST","PUT","DELETE","OPTIONS","HEAD") 
+                     // 允许的HTTP方法
+                    .allowCredentials(true)  // 允许发送凭据
+                    .maxAge(3600);  // 预检请求的有效期
+            System.out.println("开始执行");
+        }
+    };
+}
+
+4.使用idea的mybatisx插件自动生成bean和xml等....</code></pre><h3 id="实现多表分页查询"><a href="#实现多表分页查询" class="headerlink" title="实现多表分页查询"></a>实现多表分页查询</h3><pre><code>1.在dao类新建一个方法比如说 
+List&lt;Roominf&gt;listByPage(IPage&lt;Roominf&gt; page,@Param("params") Map params);
+其中声明返回Roominf的列表 添加IPage会自动执行分页查询操作 声明Map
+@Param注解是MyBatis中用来传递参数的注解。在DAO接口的方法中，如果需要传递多个参数，
+可以使用@Param注解为每个参数指定一个名称，以便在SQL语句中引用这些参数。
+所以调用这个方法的时候需要传入page和map两个参数
+
+2.在对应service层添加方法
+Page&lt;Roominf&gt; listByPage(@Param("params") Map params);
+page方法根据map也就是查询条件进行分页查询操作
+
+3.在对应xml文件编写对应的sql语句
+namespace配置DAO的路径，id为方法名,resultMap为这个模块取一个别名
+
+&lt;mapper namespace="com.example.house.generator.mapper.RoominfMapper"&gt;
+&lt;select id="listByPage" resultMap="BaseResultMap"&gt;
+
+SELECT r.*,t.*,u.*,s.* FROM  roominf r  
+JOIN type t ON r.zhonglei = t.id 
+JOIN useto u ON r.yongtu = u.usetoid 
+JOIN state s ON r.zhuangtai = s.stateid 
+WHERE 1 = 1
+
+//相等查询(if判断传入map对应值是否存在,其中params是dao方法定义的名字)
+&lt;if test="params.num != null and params.num !=''"&gt;
+  and r.num = #{params.num}
+&lt;/if&gt;
+//模糊查询
+&lt;if test="params.mingzi != null and params.mingzi !=''"&gt;
+  and r.mingzi like concat('%',#{params.mingzi},'%')
+&lt;/if&gt;
+......
+&lt;/select&gt;
+定义了一个名为"BaseResultMap"的结果映射，用于将数据库查询结果映射到Java对象
+com.example.house.generator.domain.Roominf 中。
+&lt;resultMap id="BaseResultMap" type="com.example.house.generator.domain.Roominf"&gt;
+定义了一个名为 "BaseResultMap" 的结果映射，将查询结果映射到 Roominf 类型的对象。
+&lt;id&gt; 和 &lt;result&gt; 标签：分别用于配置主键和普通字段的映射关系，指定了属性名、数据库列名
+以及 JDBC 数据类型。
+&lt;association&gt; 标签：用于配置关联对象的映射关系，这里包括了 Type、Useto 和 State 
+三个关联对象的映射配置，指定了属性名、关联的 Java 类型以及各自的字段映射关系。
+注：如此写法Roominf的bean必须添加private  Useto useto;对应bean
+
+ &lt;resultMap id="BaseResultMap" type="com.example.house.generator.domain.Roominf"&gt;
+    &lt;id property="num" column="num" jdbcType="INTEGER"/&gt;
+    &lt;result property="weizhi" column="weizhi" jdbcType="VARCHAR"/&gt;
+    &lt;association property="type" javaType="com.example.house.generator.domain.Type"&gt;
+        &lt;result property="id" column="id" /&gt;
+        &lt;result property="type" column="type" jdbcType="VARCHAR"/&gt;
+    &lt;/association&gt;
+    &lt;association property="useto" javaType="com.example.house.generator.domain.Useto"&gt;
+        &lt;result property="usetoid" column="usetoid"/&gt;
+        &lt;result property="userto" column="userto" jdbcType="VARCHAR"/&gt;
+    &lt;/association&gt;
+    &lt;association property="state" javaType="com.example.house.generator.domain.State"&gt;
+        &lt;result property="stateid" column="stateid"/&gt;
+        &lt;result property="statename" column="statename" jdbcType="VARCHAR"/&gt;
+    &lt;/association&gt;
+&lt;/resultMap&gt;
+&lt;/mapper&gt;
+5.在Controller调用方法
+ResultBean为状态码的bean
+声明传入一个Map调用listByPage方法
+  public ResultBean listData(Map params){
+    Page&lt;Roominf&gt; pager =new Page&lt;&gt;();
+    pager = roominfService.listByPage(params);
+    ResultBean resultBean = new ResultBean();
+    resultBean.put("pager",pager);
+    return resultBean;
+}
+
+添加方法接收前端传入的数据
+//请求地址
+@RequestBody只接收传入json格式数据
+@RequestMapping("/maplist")
+调用封装的listData方法
+public ResultBean maplist(@RequestBody Map&lt;String, Object&gt; params){
+    ResultBean resultBean = new ResultBean();
+    resultBean.put("list",listData(params));
+    return resultBean;
+}
+
+4.在impl编写调用方法
+@Override
+public Page&lt;Roominf&gt; listByPage(Map params) {
+    //这两个参数为前端封装传入的数据
+    current为当前页,size为一页显示多少条数据
+    int current = (int) params.get("Current");
+    int size = (int) params.get("size");
+    //进行分页操作
+    Page&lt;Roominf&gt; page = new Page&lt;Roominf&gt;(current,size);
+    //根据查询条件进行查询
+    List&lt;Roominf&gt; UsersList= roominfMapper.listByPage(page,params);
+    page.setRecords(UsersList);
+    return page;
+}</code></pre><h1 id="vue前端"><a href="#vue前端" class="headerlink" title="vue前端"></a>vue前端</h1><h3 id="vue2前端配置"><a href="#vue2前端配置" class="headerlink" title="vue2前端配置"></a>vue2前端配置</h3><pre><code>1.在一个空目录文件夹下执行以下命令：
+vue create house
+house为项目名
+提示选择基础依赖（全部取消括号东西）
+选择vue2
+将依赖项的配置选择放置在package.json中
+是否将其保存为将来项目的预设？no
+
+2.安装依赖：(可在package.json的dependencies查看依赖和版本)
+npm install axios@1.5.0
+npm install body-parser@1.20.2
+npm install cors@2.8.5
+npm install element-ui@2.15.14
+npm install express@4.18.2
+npm install js-cookie@3.0.5
+npm install vue-loader@17.3.1 --save-dev
+npm install vue-router@3.0.2
+npm install vuex@3.1.0
+npm install vueify@9.4.1
+
+3.新建.env.development和.env.production全局配置文件
+.env.development
+ENV = 'development'
+#开发环境，文件名称是固定的；必须放在项目的根路径下面，变量名称必须是VUE_APP作为前缀
+VUE_APP_BASE_API = 'http://localhost:8919'
+VUE_CLI_BABEL_TRANSPILE_MODULES = true
+
+.env.production
+ENV = 'production'
+VUE_APP_BASE_API = 'http://localhost:8919'
+
+ 4.封装request请求
+ 新建utils包添加request.js文件
+ import axios from 'axios'
+ import Cookie from 'js-cookie'
+
+ // 创建axios实例
+ const service = axios.create({
+ baseURL: process.env.VUE_APP_BASE_API , // api的base_url
+ timeout: 300000, // 请求超时时间
+ headers:{
+ 'Content-Type':'application/json'
+ }
+})
+
+// request拦截器
+service.interceptors.request.use(
+  config =&gt; {
+    config.headers['token'] = Cookie.get("token")
+    console.log("url:",config.url)
+    return config
+  },
+  error =&gt; {
+    console.log(error)
+    return Promise.reject(error)
+  }
+)
+
+// response拦截器
+  service.interceptors.response.use(
+    response =&gt; {
+      const res = response.data
+       const config = response.config
+       // 二进制流处理
+      if (config &amp;&amp; config.responseType === 'blob') {
+         return response
+       }
+       if (res.code === 401) {
+         alert('登录状态已过期，请您重新登录');
+         // this.$router.push('/login');
+         router.replace('/login');
+       }
+       else if (res.code !== 200) {
+        console.log('请求异常：')
+        // this.$message('请求异常')
+       } else {
+        console.log('请求地址：', response.config.url)
+      }
+      return res
+     },
+    error =&gt; {
+       console.log('请求异常：' + error)
+       return Promise.reject(error)
+    })
+
+export default service
+
+5.新建api包新建对应的js文件
+import request from '../utils/request'
+
+export function maplist(data) {
+return request({
+url: 'roominf/maplist',
+method: 'post',
+data: data,
+});
+} 
+
+6.别忘了main.js引入组件
+import Cookie from 'js-cookie'
+//引入ElementUI组件
+import ElementUI from 'element-ui'
+//引入ElementUI的css样式表
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.prototype.$Cookie = Cookie
+Vue.config.productionTip = false
+Vue.use(ElementUI)</code></pre><h1 id="uniapp"><a href="#uniapp" class="headerlink" title="uniapp"></a>uniapp</h1><h3 id="uniapp配置"><a href="#uniapp配置" class="headerlink" title="uniapp配置"></a>uniapp配置</h3><pre><code> 1.打开HBuilder新建项目选择vue2
+ 2.封装请求方式添加utils包 新建wx-request.js
+// 全局请求封装
+  const base_url = 'http://localhost:8919/'
+  // 需要修改token，和根据实际修改请求头
+  export default (params) =&gt; {
+    let url = params.url;
+    let method = params.method || "get";
+    let data = params.data || {};
+    let header = {}
+    if (method == "post") {
+      header = {
+        'Content-Type': 'application/json'
+      };
+    }
+    // 获取本地token
+    if (uni.getStorageSync("token")) {
+      header['Authorization'] = 'Bearer ' + uni.getStorageSync("token");
+    }
+
+    return new Promise((resolve, reject) =&gt; {
+      uni.request({
+        url: base_url + url,
+        method: method,
+        header: header,
+        data: data,
+        success(response) {
+          const res = response
+          // 根据返回的状态码做出对应的操作
+          //获取成功
+          console.log(res.statusCode);
+          if (res.statusCode == 200) {
+            resolve(res.data);
+          } else {
+            uni.clearStorageSync()
+            switch (res.statusCode) {
+              case 401:
+                uni.showModal({
+                  title: "提示",
+                  content: "请登录",
+                  showCancel: false,
+                  success(res) {
+                    setTimeout(() =&gt; {
+                      uni.navigateTo({
+                        url: "/pages/login/index",
+                      })
+                    }, 1000);
+                  },
+                });
+                break;
+              case 404:
+                uni.showToast({
+                  title: '请求地址不存在...',
+                  duration: 2000,
+                })
+                break;
+              default:
+                uni.showToast({
+                  title: '请重试...',
+                  duration: 2000,
+                })
+                break;
+            }
+          }
+        },
+        fail(err) {
+          console.log(err)
+          if (err.errMsg.indexOf('request:fail') !== -1) {
+            wx.showToast({
+              title: '网络异常',
+              icon: "error",
+              duration: 2000
+            })
+          } else {
+            wx.showToast({
+              title: '未知异常',
+              duration: 2000
+            })
+          }
+          reject(err);
+
+        },
+        complete() {
+          // 不管成功还是失败都会执行
+          uni.hideLoading();
+          uni.hideToast();
+        }
+      });
+    }).catch((e) =&gt; {});
+  };
+
+3.新建api包 新建对应的js文件
+
+import request from '@/utils/wx-request'
+export function list(){
+return request({
+url:'roominf/list',
+method:'post'
+})
+}</code></pre><blockquote>
 <p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
 </blockquote>
 <p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p>
@@ -1084,7 +1434,7 @@
                     </span>
                     <a href="https://github.com/New-luo/New-luo.github.io.git" class="b-link-green">晨曦之旅</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2024/01/22/nvm/" class="b-link-green">Nvm工具</a>
+                    <a href="/2024/03/24/house/" class="b-link-green">房屋租赁项目</a>
                 </p>
             </div>
 
@@ -1107,7 +1457,7 @@
         repo: 'New-luo.github.io',
         owner: 'New-luo',
         admin: ["New-luo"],
-        id: '2024/01/22/nvm/',
+        id: '2024/03/24/house/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1126,7 +1476,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Mon Jan 22 2024 09:00:00 GMT+0800',
+    id: 'Sun Mar 24 2024 12:30:00 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -1150,9 +1500,9 @@ gitment.render('gitment-content');
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://github.com/New-luo/New-luo.github.io.git/2024/01/22/nvm/';
-        this.page.identifier = '/2024/01/22/nvm/';
-        this.page.title = 'Nvm工具';
+        this.page.url = 'https://github.com/New-luo/New-luo.github.io.git/2024/03/24/house/';
+        this.page.identifier = '/2024/03/24/house/';
+        this.page.title = '房屋租赁项目';
     };
     let disqus_shortname = '';
 
@@ -1495,49 +1845,71 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/01/22/echarts/">
+                <a href="/2024/03/24/house/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/9.jpg" class="responsive-img" alt="ECharts">
+                        <img src="/medias/banner/5.jpg" class="responsive-img" alt="房屋租赁项目">
                         
-                        <span class="card-title">ECharts</span>
+                        <span class="card-title">房屋租赁项目</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            提供了丰富的图表类型和交互能力，使用户能够通过简单的配置生成各种各样的图表，包括但不限于折线图、柱状图、散点图、饼图、雷达图、地图等。ECharts 遵循 Apache-2.0 开源协议，免费商用。
+                            小程序
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2024-01-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-03-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/ECharts/" class="post-category" target="_blank">
-                                    ECharts
+                            <a href="/categories/SpingBoot/" class="post-category" target="_blank">
+                                    SpingBoot
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ECharts/" target="_blank">
-                        <span class="chip bg-color">ECharts</span>
+                    <a href="/tags/SpingBoot/" target="_blank">
+                        <span class="chip bg-color">SpingBoot</span>
                     </a>
                     
-                    <a href="/tags/JavaScript/" target="_blank">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/Mysql/" target="_blank">
+                        <span class="chip bg-color">Mysql</span>
+                    </a>
+                    
+                    <a href="/tags/uniapp/" target="_blank">
+                        <span class="chip bg-color">uniapp</span>
+                    </a>
+                    
+                    <a href="/tags/HBuilder/" target="_blank">
+                        <span class="chip bg-color">HBuilder</span>
+                    </a>
+                    
+                    <a href="/tags/vue-2/" target="_blank">
+                        <span class="chip bg-color">vue 2</span>
+                    </a>
+                    
+                    <a href="/tags/elementui/" target="_blank">
+                        <span class="chip bg-color">elementui</span>
+                    </a>
+                    
+                    <a href="/tags/uView/" target="_blank">
+                        <span class="chip bg-color">uView</span>
                     </a>
                     
                 </div>
@@ -1551,30 +1923,30 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/01/20/blog/">
+                <a href="/2024/03/15/redis/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/10.jpg" class="responsive-img" alt="养老院管理系统">
+                        <img src="/medias/banner/6.jpg" class="responsive-img" alt="Redis">
                         
-                        <span class="card-title">养老院管理系统</span>
+                        <span class="card-title">Redis</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在中国，老年人口数量庞大，养老需求迅速增长，但养老服务水平和质量普遍存在不足，尤其是养老机构管理问题。
+                            Redis安装与配置
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-01-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-03-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/养老院管理系统/" class="post-category" target="_blank">
-                                    养老院管理系统
+                            <a href="/categories/Redis/" class="post-category" target="_blank">
+                                    Redis
                                 </a>
                             
                             
@@ -1584,12 +1956,12 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SpingMvc/" target="_blank">
-                        <span class="chip bg-color">SpingMvc</span>
+                    <a href="/tags/Redis/" target="_blank">
+                        <span class="chip bg-color">Redis</span>
                     </a>
                     
-                    <a href="/tags/ElementUi/" target="_blank">
-                        <span class="chip bg-color">ElementUi</span>
+                    <a href="/tags/Redisclient/" target="_blank">
+                        <span class="chip bg-color">Redisclient</span>
                     </a>
                     
                 </div>

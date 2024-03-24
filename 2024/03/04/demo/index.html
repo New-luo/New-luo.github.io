@@ -858,14 +858,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        461
+                        524
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        20分
                     </div>
                     
                 
@@ -888,7 +888,8 @@
 @TableFild("属性对应表字段");
 添加参数exist=false表明这个属性可有可无
 注:如果数据库表没有这个字段然后bean没有添加这个属性会报错</code></pre><h3 id="dao"><a href="#dao" class="headerlink" title="dao"></a>dao</h3><pre><code>@Repository用于标识数据访问组件，表明该类是用来访问数据库或执行持久化操作的
-@Mapper 用于标识一个接口是 MyBatis 的 Mapper 接口，提供 SQL 映射操作</code></pre><h3 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h3><h3 id="impl"><a href="#impl" class="headerlink" title="impl"></a>impl</h3><pre><code>@Service("Service层的类名"),表明该类扫描注入service
+@Mapper 用于标识一个接口是 MyBatis 的 Mapper 接口，提供 SQL 映射操作
+@Param注解是MyBatis中用来传递参数的注解。在DAO接口的方法中，如果需要传递多个参数，可以使用@Param注解为每个参数指定一个名称，以便在SQL语句中引用这些参数。</code></pre><h3 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h3><h3 id="impl"><a href="#impl" class="headerlink" title="impl"></a>impl</h3><pre><code>@Service("Service层的类名"),表明该类扫描注入service
 @Autowired自动装配
 @Override标记方法</code></pre><h3 id="Controller"><a href="#Controller" class="headerlink" title="Controller"></a>Controller</h3><pre><code>@Controller标记为这个类为Controller(jsp项目)
 @RestController标记为这个类为Controller
@@ -1761,7 +1762,7 @@ gitment.render('gitment-content');
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">11.8k</span> 字
+                <span class="white-color">14.1k</span> 字
             
 
             

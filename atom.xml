@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/New-luo/New-luo.github.io.git/"/>
-  <updated>2024-03-15T02:41:25.577Z</updated>
+  <updated>2024-03-24T12:07:07.022Z</updated>
   <id>https://github.com/New-luo/New-luo.github.io.git/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>房屋租赁项目</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/03/24/house/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/03/24/house/</id>
+    <published>2024-03-24T04:30:00.000Z</published>
+    <updated>2024-03-24T12:07:07.022Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;后台-Spingboot&quot;&gt;&lt;a href=&quot;#后台-Spingboot&quot; class=&quot;headerlink&quot; title=&quot;后台(Spingboot)&quot;&gt;&lt;/a&gt;后台(Spingboot)&lt;/h1&gt;&lt;h3 id=&quot;后台项目搭建&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/SpingBoot/"/>
+    
+    
+      <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingBoot/"/>
+    
+      <category term="Mysql" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Mysql/"/>
+    
+      <category term="uniapp" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/uniapp/"/>
+    
+      <category term="HBuilder" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/HBuilder/"/>
+    
+      <category term="vue 2" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/vue-2/"/>
+    
+      <category term="elementui" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/elementui/"/>
+    
+      <category term="uView" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/uView/"/>
+    
+  </entry>
   
   <entry>
     <title>Redis</title>
@@ -49,7 +87,7 @@
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/03/04/demo/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/03/04/demo/</id>
     <published>2024-03-04T08:00:00.000Z</published>
-    <updated>2024-03-08T02:44:13.137Z</updated>
+    <updated>2024-03-24T07:04:32.052Z</updated>
     
     <summary type="html">
     
