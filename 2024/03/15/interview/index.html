@@ -6,14 +6,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="常用的方法和注解, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
+    <meta name="keywords" content="求职之路, UESTC CV DeepLearning MachineLearning 罗 sunhw Hongwei 计算机视觉 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="注解javabean@data无需编写get和set方法
-@TableName(&#34;表的名称&#34;)
-@TableId(&#34;表明这个属性对应数据库id字段为0数据库设置自动递增&#34;)
-@TableFild(&#34;属性对应表字段&#34;);
-添加参数exist=">
+    <meta name="description" content="JavaWindow下安装：
+下载地址：https://github.com/MSOpenTech/redis/releases
+选择64位的ZIP压缩包点击下载，下载完成后解压，并将解压后的文件夹重命名为redis，方便后面使用Sping">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>常用的方法和注解 | 晨曦之旅</title>
+    <title>求职之路 | 晨曦之旅</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -690,13 +688,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/11.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        常用的方法和注解
+                        求职之路
                     </div>
                 </div>
             </div>
@@ -808,20 +806,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/vue/" target="_blank">
-                                <span class="chip bg-color">vue</span>
+                            <a href="/tags/技术类面试题/" target="_blank">
+                                <span class="chip bg-color">技术类面试题</span>
                             </a>
                         
-                            <a href="/tags/SpingMvc/" target="_blank">
-                                <span class="chip bg-color">SpingMvc</span>
-                            </a>
-                        
-                            <a href="/tags/SpingBoot/" target="_blank">
-                                <span class="chip bg-color">SpingBoot</span>
-                            </a>
-                        
-                            <a href="/tags/jsp/" target="_blank">
-                                <span class="chip bg-color">jsp</span>
+                            <a href="/tags/行为面试题/" target="_blank">
+                                <span class="chip bg-color">行为面试题</span>
                             </a>
                         
                     </div>
@@ -832,8 +822,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/SpingBoot/" class="post-category" target="_blank">
-                                SpingBoot
+                            <a href="/categories/那些你必须知道的面试题与技巧/" class="post-category" target="_blank">
+                                那些你必须知道的面试题与技巧
                             </a>
                         
                     </div>
@@ -844,7 +834,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-03-04
+                    2024-03-15
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -858,7 +848,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        524
+                        526
                     </div>
                     
 
@@ -882,27 +872,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h1><h3 id="javabean"><a href="#javabean" class="headerlink" title="javabean"></a>javabean</h3><pre><code>@data无需编写get和set方法
-@TableName("表的名称")
-@TableId("表明这个属性对应数据库id字段为0数据库设置自动递增")
-@TableFild("属性对应表字段");
-添加参数exist=false表明这个属性可有可无
-注:如果数据库表没有这个字段然后bean没有添加这个属性会报错</code></pre><h3 id="dao"><a href="#dao" class="headerlink" title="dao"></a>dao</h3><pre><code>@Repository用于标识数据访问组件，表明该类是用来访问数据库或执行持久化操作的
-@Mapper 用于标识一个接口是 MyBatis 的 Mapper 接口，提供 SQL 映射操作
-@Param注解是MyBatis中用来传递参数的注解。在DAO接口的方法中，如果需要传递多个参数，可以使用@Param注解为每个参数指定一个名称，以便在SQL语句中引用这些参数。</code></pre><h3 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h3><h3 id="impl"><a href="#impl" class="headerlink" title="impl"></a>impl</h3><pre><code>@Service("Service层的类名"),表明该类扫描注入service
-@Autowired自动装配
-@Override标记方法</code></pre><h3 id="Controller"><a href="#Controller" class="headerlink" title="Controller"></a>Controller</h3><pre><code>@Controller标记为这个类为Controller(jsp项目)
-@RestController标记为这个类为Controller
-@RequestMapping("/xxx")这个类的方法get/post
-@Value("yml配置的属性名")获取这个属性的值
-@ResponseBody json格式返回
-@PostMapping POST请求
-@GetMapping  get请求</code></pre><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><pre><code>@Configuration 注解用于标识一个类是配置类，通过定义 
-@Bean 方法来配置和管理 Spring 应用程序中的 bean。  
-@EnableTransactionManagement 启动事务  </code></pre><h1 id="对应继承关系"><a href="#对应继承关系" class="headerlink" title="对应继承关系"></a>对应继承关系</h1><pre><code>javabean一般继承implements Serializable
-dao一般继承extends BaseMapper&lt;javabean名称&gt;
-Service一般继承extends IService&lt;javabean名称&gt;
-impl一般继承extends ServiceImpl&lt;dao, javabean&gt; implements Service</code></pre><hr>
+                <h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><pre><code>Window下安装：
+下载地址：https://github.com/MSOpenTech/redis/releases
+选择64位的ZIP压缩包点击下载，下载完成后解压，并将解压后的文件夹重命名为redis，方便后面使用</code></pre><h1 id="SpingMvc"><a href="#SpingMvc" class="headerlink" title="SpingMvc"></a>SpingMvc</h1><pre><code>1、使用cmd命令行进入解压后的redis目录
+2、在redis目录下 运行redis-server redis.windows.conf，启动redis服务，此时当关闭命令窗口redis服务也会关闭，其中后面的redis.window.conf可以省略</code></pre><hr>
+<h1 id="SpingCloud"><a href="#SpingCloud" class="headerlink" title="SpingCloud"></a>SpingCloud</h1><pre><code>可以将redis服务安装成windows服务，在redis目录下的命令窗口输入：redis-server --service-install redis.windows.conf即可
+redis-server --service-uninstall 删除服务
+查看服务是否配置成功，右键计算机—管理—服务，查找是否有Redis服务，如果启动，代表windows上的redis服务已经配置成功，redis服务已经启动。      </code></pre><h1 id="SpingBoot"><a href="#SpingBoot" class="headerlink" title="SpingBoot"></a>SpingBoot</h1><pre><code>可以将redis服务安装成windows服务，在redis目录下的命令窗口输入：redis-server --service-install redis.windows.conf即可
+redis-server --service-uninstall 删除服务
+查看服务是否配置成功，右键计算机—管理—服务，查找是否有Redis服务，如果启动，代表windows上的redis服务已经配置成功，redis服务已经启动。</code></pre><h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><pre><code> 启动本机Redis客户端：redis–cli ，此命令连接到本机的Redis服务，同时用PING命令检测本机Redis服务是否启动
+ 连接远程Redis服务： redis–cli –h host –p port –a “password”
+ 其中host为远程主机IP地址
+ Port为远程Redis服务端口号
+ Password为远程Redis服务密码</code></pre><h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><pre><code>下载解压</code></pre><h1 id="redisclient连接Redis"><a href="#redisclient连接Redis" class="headerlink" title="redisclient连接Redis"></a>redisclient连接Redis</h1>
+<table>
+  <tbody><tr>
+    <td><img width="100" src="/medias/avatars/redis.png"></td>  
+  </tr>
+</tbody></table>
+
+
+
+<hr>
 <blockquote>
 <p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
 </blockquote>
@@ -1082,7 +1073,7 @@ impl一般继承extends ServiceImpl&lt;dao, javabean&gt; implements Service</cod
                     </span>
                     <a href="https://github.com/New-luo/New-luo.github.io.git" class="b-link-green">晨曦之旅</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2024/03/04/demo/" class="b-link-green">常用的方法和注解</a>
+                    <a href="/2024/03/15/interview/" class="b-link-green">求职之路</a>
                 </p>
             </div>
 
@@ -1105,7 +1096,7 @@ impl一般继承extends ServiceImpl&lt;dao, javabean&gt; implements Service</cod
         repo: 'New-luo.github.io',
         owner: 'New-luo',
         admin: ["New-luo"],
-        id: '2024/03/04/demo/',
+        id: '2024/03/15/interview/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1124,7 +1115,7 @@ impl一般继承extends ServiceImpl&lt;dao, javabean&gt; implements Service</cod
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Mon Mar 04 2024 16:00:00 GMT+0800',
+    id: 'Fri Mar 15 2024 09:00:00 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -1148,9 +1139,9 @@ gitment.render('gitment-content');
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://github.com/New-luo/New-luo.github.io.git/2024/03/04/demo/';
-        this.page.identifier = '/2024/03/04/demo/';
-        this.page.title = '常用的方法和注解';
+        this.page.url = 'https://github.com/New-luo/New-luo.github.io.git/2024/03/15/interview/';
+        this.page.identifier = '/2024/03/15/interview/';
+        this.page.title = '求职之路';
     };
     let disqus_shortname = '';
 
@@ -1497,18 +1488,18 @@ gitment.render('gitment-content');
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/03/15/interview/">
+                <a href="/2024/03/15/redis/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/11.jpg" class="responsive-img" alt="求职之路">
+                        <img src="/medias/banner/6.jpg" class="responsive-img" alt="Redis">
                         
-                        <span class="card-title">求职之路</span>
+                        <span class="card-title">Redis</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            职场新人的面试秘籍
+                            Redis安装与配置
                         
                     </div>
                     <div class="publish-info">
@@ -1519,8 +1510,8 @@ gitment.render('gitment-content');
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/那些你必须知道的面试题与技巧/" class="post-category" target="_blank">
-                                    那些你必须知道的面试题与技巧
+                            <a href="/categories/Redis/" class="post-category" target="_blank">
+                                    Redis
                                 </a>
                             
                             
@@ -1530,12 +1521,12 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/技术类面试题/" target="_blank">
-                        <span class="chip bg-color">技术类面试题</span>
+                    <a href="/tags/Redis/" target="_blank">
+                        <span class="chip bg-color">Redis</span>
                     </a>
                     
-                    <a href="/tags/行为面试题/" target="_blank">
-                        <span class="chip bg-color">行为面试题</span>
+                    <a href="/tags/Redisclient/" target="_blank">
+                        <span class="chip bg-color">Redisclient</span>
                     </a>
                     
                 </div>
@@ -1549,18 +1540,18 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/03/04/spl/">
+                <a href="/2024/03/04/demo/">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/1.jpg" class="responsive-img" alt="sql语句">
+                        <img src="/medias/banner/5.jpg" class="responsive-img" alt="常用的方法和注解">
                         
-                        <span class="card-title">sql语句</span>
+                        <span class="card-title">常用的方法和注解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基础的sqp语句
+                            巩固复习
                         
                     </div>
                     <div class="publish-info">
@@ -1571,8 +1562,8 @@ gitment.render('gitment-content');
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/sql/" class="post-category" target="_blank">
-                                    sql
+                            <a href="/categories/SpingBoot/" class="post-category" target="_blank">
+                                    SpingBoot
                                 </a>
                             
                             
@@ -1582,12 +1573,20 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Mysql/" target="_blank">
-                        <span class="chip bg-color">Mysql</span>
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
-                    <a href="/tags/Navicat/" target="_blank">
-                        <span class="chip bg-color">Navicat</span>
+                    <a href="/tags/SpingMvc/" target="_blank">
+                        <span class="chip bg-color">SpingMvc</span>
+                    </a>
+                    
+                    <a href="/tags/SpingBoot/" target="_blank">
+                        <span class="chip bg-color">SpingBoot</span>
+                    </a>
+                    
+                    <a href="/tags/jsp/" target="_blank">
+                        <span class="chip bg-color">jsp</span>
                     </a>
                     
                 </div>

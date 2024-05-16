@@ -40,11 +40,11 @@
     
       <category term="SpingBoot" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/SpingBoot/"/>
     
+      <category term="Mysql" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Mysql/"/>
+    
       <category term="uniapp" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/uniapp/"/>
     
       <category term="vue 2" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/vue-2/"/>
-    
-      <category term="Mysql" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Mysql/"/>
     
       <category term="elementui" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/elementui/"/>
     
@@ -79,6 +79,34 @@
       <category term="Redis" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Redis/"/>
     
       <category term="Redisclient" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Redisclient/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>求职之路</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/03/15/interview/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/03/15/interview/</id>
+    <published>2024-03-15T01:00:00.000Z</published>
+    <updated>2024-05-16T03:26:07.791Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Java&quot;&gt;&lt;a href=&quot;#Java&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="那些你必须知道的面试题与技巧" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/%E9%82%A3%E4%BA%9B%E4%BD%A0%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%8E%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="技术类面试题" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/%E6%8A%80%E6%9C%AF%E7%B1%BB%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="行为面试题" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/%E8%A1%8C%E4%B8%BA%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
@@ -143,34 +171,6 @@
   </entry>
   
   <entry>
-    <title>UNI-APP</title>
-    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/02/27/uni-app/"/>
-    <id>https://github.com/New-luo/New-luo.github.io.git/2024/02/27/uni-app/</id>
-    <published>2024-02-27T01:00:00.000Z</published>
-    <updated>2024-03-08T11:32:33.885Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;微信开发者工具&quot;&gt;&lt;a href=&quot;#微信开发者工具&quot; class=&quot;headerlink&quot; title=&quot;微信开发者工具&quot;&gt;&lt;/a&gt;微信开发者工具&lt;/h1&gt;&lt;h1 id=&quot;项目基本组成结构&quot;&gt;&lt;a href=&quot;#项目基本组成结构&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="UNI-APP" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/UNI-APP/"/>
-    
-    
-      <category term="VUE" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/VUE/"/>
-    
-      <category term="UNI-APP" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/UNI-APP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>微信小程序</title>
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/02/27/wxml/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/02/27/wxml/</id>
@@ -195,6 +195,34 @@
       <category term="wxml" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/wxml/"/>
     
       <category term="微信小程序" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UNI-APP</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/02/27/uni-app/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/02/27/uni-app/</id>
+    <published>2024-02-27T01:00:00.000Z</published>
+    <updated>2024-03-08T11:32:33.885Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;微信开发者工具&quot;&gt;&lt;a href=&quot;#微信开发者工具&quot; class=&quot;headerlink&quot; title=&quot;微信开发者工具&quot;&gt;&lt;/a&gt;微信开发者工具&lt;/h1&gt;&lt;h1 id=&quot;项目基本组成结构&quot;&gt;&lt;a href=&quot;#项目基本组成结构&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="UNI-APP" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/UNI-APP/"/>
+    
+    
+      <category term="VUE" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/VUE/"/>
+    
+      <category term="UNI-APP" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/UNI-APP/"/>
     
   </entry>
   
@@ -227,34 +255,6 @@
   </entry>
   
   <entry>
-    <title>Nvm工具</title>
-    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/22/nvm/"/>
-    <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/22/nvm/</id>
-    <published>2024-01-22T01:00:00.000Z</published>
-    <updated>2024-03-04T08:27:10.397Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;ECharts&quot;&gt;&lt;a href=&quot;#ECharts&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Nvm" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/Nvm/"/>
-    
-    
-      <category term="node" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/node/"/>
-    
-      <category term="Nvm" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Nvm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ECharts</title>
     <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/22/echarts/"/>
     <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/22/echarts/</id>
@@ -279,6 +279,34 @@
       <category term="ECharts" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/ECharts/"/>
     
       <category term="JavaScript" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nvm工具</title>
+    <link href="https://github.com/New-luo/New-luo.github.io.git/2024/01/22/nvm/"/>
+    <id>https://github.com/New-luo/New-luo.github.io.git/2024/01/22/nvm/</id>
+    <published>2024-01-22T01:00:00.000Z</published>
+    <updated>2024-03-04T08:27:10.397Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;ECharts&quot;&gt;&lt;a href=&quot;#ECharts&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Nvm" scheme="https://github.com/New-luo/New-luo.github.io.git/categories/Nvm/"/>
+    
+    
+      <category term="node" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/node/"/>
+    
+      <category term="Nvm" scheme="https://github.com/New-luo/New-luo.github.io.git/tags/Nvm/"/>
     
   </entry>
   
