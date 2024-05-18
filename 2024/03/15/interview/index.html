@@ -848,14 +848,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        4k
+                        5.3k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        140分
+                        190分
                     </div>
                     
                 
@@ -920,8 +920,6 @@
 <li><strong>谈谈你对微服务架构和容器化（如Docker）的理解</strong>：微服务架构和容器化是当前流行的技术趋势，它们通过将应用拆分为多个小型服务并使用容器进行部署和管理，提高了系统的可扩展性和灵活性。</li>
 <li><strong>如何看待Java在云计算和大数据领域的应用</strong>:Java在云计算和大数据领域也有广泛的应用，如使用Spring Cloud构建微服务架构、使用Hadoop进行大数据处理等。 </li>
 </ol>
-<h1 id="SpingMvc"><a href="#SpingMvc" class="headerlink" title="SpingMvc"></a>SpingMvc</h1><pre><code>1、使用cmd命令行进入解压后的redis目录
-2、在redis目录下 运行redis-server redis.windows.conf，启动redis服务，此时当关闭命令窗口redis服务也会关闭，其中后面的redis.window.conf可以省略</code></pre><hr>
 <h1 id="SpingCloud"><a href="#SpingCloud" class="headerlink" title="SpingCloud"></a>SpingCloud</h1><h3 id="1-什么是集群"><a href="#1-什么是集群" class="headerlink" title="1.什么是集群"></a>1.什么是集群</h3><p><strong>集群</strong>是将多个节点组合在一起以实现高可用性和负载均衡的一种方式。集群模式通过部署多台服务器运行同一套服务，实现服务的对外访问和负载均衡。在Spring Cloud微服务架构中，使用多实例组成的集群有多个好处，包括提高系统的可用性、扩展性、以及容错能力。当集群中的一个实例出现问题时，其他的实例可以继续提供服务，从而保证系统的持续运行。<br>简而言之，Spring Cloud中的集群是通过多个实例的紧密协作，实现计算工作的高效完成，以提高系统的整体性能和可靠性。</p>
 <h3 id="2-什么是分布式"><a href="#2-什么是分布式" class="headerlink" title="2.什么是分布式"></a>2.什么是分布式</h3><p><strong>分布式</strong>是一种将不同的业务模块或同一业务的多个子业务部署在不同的服务器上的架构模式。通过多个子业务之间的配合，完成整个业务，从而解决高并发的问题1。这种架构模式的主要优势在于，它可以使用多个服务器来支撑一个业务，从而提高子业务的效率，进而提升整体业务的服务能力。<br>在分布式架构中，每个服务都足够内聚和足够小，这有助于开发人员更容易地聚焦和理解特定的业务功能或需求。此外，由于每个服务都是独立部署和运行的，因此开发、部署和运维都可以独立进行，这增加了系统的灵活性和可扩展性。<br>然而，分布式架构也带来了一些挑战，如需要处理分布式系统的复杂性、多服务运维的难度、服务间通讯的成本以及数据一致性的问题等。<br>总之，Spring Cloud中的分布式架构是一种高效的、灵活的解决方案，用于构建高并发、高可用的业务系统。但同时，也需要开发人员和运维团队具备相应的技术和经验来应对其带来的挑战。</p>
 <h3 id="3-Eureka-Server的作用"><a href="#3-Eureka-Server的作用" class="headerlink" title="3.Eureka Server的作用"></a>3.Eureka Server的作用</h3><p>Eureka Server在微服务架构中扮演着服务注册中心的角色，其作用主要有以下几点：</p>
@@ -971,13 +969,89 @@
 <li><strong>监控与管理</strong>：注册中心通常提供Web界面或API，使得系统维护人员可以方便地监控各个微服务的状态和运行情况。这有助于及时发现和解决问题，提高系统的稳定性和可用性。</li>
 </ol>
 <p>综上所述，即使可以直接通过微服务的地址和端口访问微服务，注册中心在微服务架构中仍然扮演着不可或缺的角色。它简化了微服务之间的通信和协作过程，提供了动态服务管理、负载均衡、容错与故障隔离以及监控与管理等功能，为构建高效、稳定、可扩展的微服务架构提供了有力支持。</p>
-<h1 id="SpingBoot"><a href="#SpingBoot" class="headerlink" title="SpingBoot"></a>SpingBoot</h1><pre><code>可以将redis服务安装成windows服务，在redis目录下的命令窗口输入：redis-server --service-install redis.windows.conf即可
-redis-server --service-uninstall 删除服务
-查看服务是否配置成功，右键计算机—管理—服务，查找是否有Redis服务，如果启动，代表windows上的redis服务已经配置成功，redis服务已经启动。</code></pre><h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><pre><code> 启动本机Redis客户端：redis–cli ，此命令连接到本机的Redis服务，同时用PING命令检测本机Redis服务是否启动
- 连接远程Redis服务： redis–cli –h host –p port –a “password”
- 其中host为远程主机IP地址
- Port为远程Redis服务端口号
- Password为远程Redis服务密码</code></pre><h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><pre><code>下载解压</code></pre><h1 id="redisclient连接Redis"><a href="#redisclient连接Redis" class="headerlink" title="redisclient连接Redis"></a>redisclient连接Redis</h1>
+<h1 id="SpingBoot"><a href="#SpingBoot" class="headerlink" title="SpingBoot"></a>SpingBoot</h1><h4 id="1-请解释Spring-Boot是什么，以及它的主要优点是什么？"><a href="#1-请解释Spring-Boot是什么，以及它的主要优点是什么？" class="headerlink" title="1.请解释Spring Boot是什么，以及它的主要优点是什么？"></a>1.请解释Spring Boot是什么，以及它的主要优点是什么？</h4><p>Spring Boot是Spring开源组织下的子项目，它是一站式Spring组件解决方案，主要用于简化Spring应用的创建、配置和管理。其主要优点包括：</p>
+<ul>
+<li><strong>快速开发：</strong>通过提供一系列启动器（Starters），开发者可以快速地集成Spring及其他技术，而不需要到处找示例代码和依赖包。</li>
+<li><strong>简化配置：</strong>Spring Boot能够自动配置大部分常用的配置，如数据源、消息队列等，从而减少了大量与基础架构相关的样板代码。</li>
+<li><strong>内嵌服务器：</strong>Spring Boot内置了嵌入式的HTTP服务器（如Tomcat），降低了对环境的要求。</li>
+<li><strong>提供非业务性功能：</strong>如安全管理、运行数据监控、运行状况检查等。</li>
+</ul>
+<h4 id="2-请描述一下Spring-Boot中的Starters是什么？"><a href="#2-请描述一下Spring-Boot中的Starters是什么？" class="headerlink" title="2.请描述一下Spring Boot中的Starters是什么？"></a>2.请描述一下Spring Boot中的Starters是什么？</h4><p><strong>Starters</strong>在Spring Boot中可以理解为启动器，它包含了一系列可以集成到应用里面的依赖包。通过加入相应的starter依赖，开发者可以一站式地集成Spring及其他技术，而不需要手动添加和配置大量的依赖。</p>
+<h4 id="3-如何使用Spring-Boot创建一个简单的应用程序？"><a href="#3-如何使用Spring-Boot创建一个简单的应用程序？" class="headerlink" title="3.如何使用Spring Boot创建一个简单的应用程序？"></a>3.如何使用Spring Boot创建一个简单的应用程序？</h4><p>使用Spring Boot创建一个简单的应用程序，通常包括以下几个步骤：</p>
+<ul>
+<li>安装Spring Boot和相关开发工具（如IDE插件）。</li>
+<li>创建一个新的Maven或Gradle项目。</li>
+<li>在项目的依赖管理文件（如pom.xml或build.gradle）中添加Spring Boot的starter依赖。</li>
+<li>创建一个包含@SpringBootApplication注解的主类。</li>
+<li>运行应用程序。</li>
+</ul>
+<h4 id="4-SpringBootApplication注解的作用是什么？"><a href="#4-SpringBootApplication注解的作用是什么？" class="headerlink" title="4.@SpringBootApplication注解的作用是什么？"></a>4.@SpringBootApplication注解的作用是什么？</h4><ul>
+<li><p><strong>@SpringBootApplication</strong>注解是Spring Boot中的一个核心注解，它包含了以下三个注解：</p>
+</li>
+<li><p><strong>@Configuration：</strong>指定当前类是一个配置类。</p>
+</li>
+<li><p><strong>@EnableAutoConfiguration：</strong>启用Spring Boot的自动配置机制。</p>
+</li>
+<li><p><strong>@ComponentScan：</strong>让Spring扫描到@Configuration类所在的包，并注册所有的组件。</p>
+</li>
+</ul>
+<h4 id="5-为什么使用springBoot或springBoot的优点"><a href="#5-为什么使用springBoot或springBoot的优点" class="headerlink" title="5.为什么使用springBoot或springBoot的优点"></a>5.为什么使用springBoot或springBoot的优点</h4><ul>
+<li><strong>版本锁定：</strong> 解决maven依赖版本冲突问题</li>
+<li><strong>起步依赖：</strong> 解决jar过多问题</li>
+<li><strong>自动配置：</strong> 解决配置文件过多问题</li>
+<li><strong>内置tomcat：</strong> 通过内置tomcat，不需要其他外置tomcat，也能运行javaEE。</li>
+</ul>
+<h4 id="6-springBoot与springCloud-区别"><a href="#6-springBoot与springCloud-区别" class="headerlink" title="6. springBoot与springCloud 区别"></a>6. springBoot与springCloud 区别</h4><p><strong>SpringBoot</strong>是快速开发的Spring框架，<strong>SpringCloud</strong>是完整的微服务框架，SpringCloud依赖于SpringBoot。</p>
+<h4 id="7-springBoot的核心配置文件有哪些，作用是什么"><a href="#7-springBoot的核心配置文件有哪些，作用是什么" class="headerlink" title="7.springBoot的核心配置文件有哪些，作用是什么"></a>7.springBoot的核心配置文件有哪些，作用是什么</h4><p><strong>application</strong> 和 <strong>bootstrap</strong> 配置文件。<br><strong>application：</strong> 用于项目的自动化配置。<br><strong>bootstrap：</strong> 一些不能被覆盖的属性和加密或解密的场景。比application要先加载。</p>
+<h4 id="8-springBoot配置文件有几种类型，区别是什么"><a href="#8-springBoot配置文件有几种类型，区别是什么" class="headerlink" title="8.springBoot配置文件有几种类型，区别是什么"></a>8.springBoot配置文件有几种类型，区别是什么</h4><p><strong>.yml</strong> 和 <strong>.properties</strong></p>
+<p>区别主要是书写方法不一样，.properties加载优先级大于.yml。</p>
+<pre class="line-numbers language-java"><code class="language-java">server<span class="token punctuation">.</span>port <span class="token operator">=</span> <span class="token number">8088</span> <span class="token comment" spellcheck="true">//.properties方式</span>
+
+server：           <span class="token comment" spellcheck="true">//.yml方式</span>
+    port：<span class="token number">8088</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="9-什么是热部署？springBoot怎么实现热部署"><a href="#9-什么是热部署？springBoot怎么实现热部署" class="headerlink" title="9.什么是热部署？springBoot怎么实现热部署"></a>9.什么是热部署？springBoot怎么实现热部署</h4><p><strong>热部署</strong>： 修改代码不需要重启，就可以实现编译并部署到服务器上。</p>
+<p>(1)在开发时修改代码不需要重启服务，节省了时间。</p>
+<p>(2)部署在服务器上的程序，可以在不停止的情况下进行升级。<br>①使用devtools。在配置文件中把devtools.restart.enabled 设置为 true。每次都需要build一下才行。<br>②idea设置实现热部署。</p>
+<h4 id="10-什么是-JavaConfig？"><a href="#10-什么是-JavaConfig？" class="headerlink" title="10.什么是 JavaConfig？"></a>10.什么是 JavaConfig？</h4><p>JavaConfig 是 Spring 社区的产品，它提供了配置 Spring IoC 容器的纯 Java 方法，有助于避免使用 XML 配置。</p>
+<h4 id="11-Spring-Boot-的核心注解是哪个？它主要由哪几个注解组成的或介绍一下-SpringBootApplication-注解"><a href="#11-Spring-Boot-的核心注解是哪个？它主要由哪几个注解组成的或介绍一下-SpringBootApplication-注解" class="headerlink" title="11.Spring Boot 的核心注解是哪个？它主要由哪几个注解组成的或介绍一下 @SpringBootApplication 注解"></a>11.Spring Boot 的核心注解是哪个？它主要由哪几个注解组成的或介绍一下 @SpringBootApplication 注解</h4><p><strong>@SpringBootApplication：</strong>包含了三个注解。<br><strong>①SpringBootConfiguration：</strong> 实现了@Configuration注解，实现配置文件的功能。<br><strong>②@EnableAutoConfiguration：</strong> 打开自动配置的功能，也可以关闭某个自动配置的选项， 例<br>如： java 如关闭数据源自动配置功能： @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })。<br><strong>③@ComponentScan：</strong> Spring组件扫描。</p>
+<h4 id="12-springBoot的启动器starter"><a href="#12-springBoot的启动器starter" class="headerlink" title="12.springBoot的启动器starter"></a>12.springBoot的启动器starter</h4><p>可以通过启动器去集成其他技术：web、redis、maybatis等。<br>在pom配置 spring-boot-starter-web，就可以进行web开发。</p>
+<p>原理：会加载这些配置类，放进spring容器中，就可以从容器中获取这些类。</p>
+<h4 id="13-springBoot项目的启动方法"><a href="#13-springBoot项目的启动方法" class="headerlink" title="13.springBoot项目的启动方法"></a>13.springBoot项目的启动方法</h4><ul>
+<li>打包</li>
+<li>maven插件运行</li>
+<li>main启动</li>
+</ul>
+<h4 id="14-如何在-Spring-Boot-启动的时候运行一些特定的代码？"><a href="#14-如何在-Spring-Boot-启动的时候运行一些特定的代码？" class="headerlink" title="14.如何在 Spring Boot 启动的时候运行一些特定的代码？"></a>14.如何在 Spring Boot 启动的时候运行一些特定的代码？</h4><p>可以实现接口 ApplicationRunner或者 CommandLineRunner，这两个接口实现方式一样(项目启动完成后执行) ，它们<br>都只提供了一个 run 方法，在run方法写你的业务逻辑。</p>
+<h4 id="15-springBoot的全局异常处理"><a href="#15-springBoot的全局异常处理" class="headerlink" title="15.springBoot的全局异常处理"></a>15.springBoot的全局异常处理</h4><p><strong>@ControllerAdvice：</strong>开启了全局异常的捕获。然后自定义一个方法使用@ExceptionHandler注解然后定义捕获异常的类型即可对这些捕获的异常进行统一的处理。</p>
+<pre><code>@ControllerAdvice
+public class ExceptionUtil{
+
+    @ExceptionHandler(value =Exception.class)
+    @ResponseBody
+    public String exceptionHandler(Exception e){
+        System.out.println("全局异常捕获:"+e);
+        return "全局异常捕获,错误原因:"+e.getMessage();
+    }
+
+}</code></pre><h4 id="16-spring-Boot常用注解"><a href="#16-spring-Boot常用注解" class="headerlink" title="16.spring Boot常用注解"></a>16.spring Boot常用注解</h4><ul>
+<li>@SpringBootApplication： SpringBootConfiguration配置类、componentScan扫描包、EnableAutoConfiguration导入其他配置类</li>
+<li>@RestController： @ResponseBody和@Controller的作用。</li>
+<li>@Component,@Service,@Controller,@Repository： 将类注入容器。</li>
+<li>@GetMapping、@PostMapping、@PutMapping、@DeleteMapping： 映射请求，只能接收的对应的请求。</li>
+<li>@AutoWired： 按照类型匹配注入。</li>
+<li>@Qualifier： 和AutoWired联合使用，在按照类型匹配的基础上，在按照名称匹配。</li>
+<li>@Resource： 按照名称匹配依赖注入。</li>
+<li>@Bean： 用于将方法返回值对象放入容器。</li>
+<li>@RequestParam： 获取查询参数。即url?name=这种形式</li>
+<li>@RequestBody： 该注解用于获取请求体数据（body）,get没有请求体，故而一般用于post请求。@PathVariable： 获取路径参数。即url/{id}这种形式。</li>
+<li>@Value： 将外部的值动态注入到 Bean 中。</li>
+<li>    @Value(“${}”)：可以获取配置文件的值。</li>
+<li>    @Value(“#{}”)：表示SpEl(Spring Expression Language是Spring表达式语言，可以在运行时查询和操作数据。)表达式通常用来获取 bean 的属性，或者调用 bean 的某个方法。</li>
+</ul>
+<h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><p>​     启动本机Redis客户端：redis–cli ，此命令连接到本机的Redis服务，同时用PING命令检测本机Redis服务是否启动<br>​     连接远程Redis服务： redis–cli –h host –p port –a “password”<br>​     其中host为远程主机IP地址<br>​     Port为远程Redis服务端口号<br>​     Password为远程Redis服务密码</p>
+<h1 id="MySql"><a href="#MySql" class="headerlink" title="MySql"></a>MySql</h1><p>​    下载解压</p>
+<h1 id="redisclient连接Redis"><a href="#redisclient连接Redis" class="headerlink" title="redisclient连接Redis"></a>redisclient连接Redis</h1>
+
 <table>
   <tbody><tr>
     <td><img width="100" src="/medias/avatars/redis.png"></td>  
@@ -991,6 +1065,7 @@ redis-server --service-uninstall 删除服务
 <p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
 </blockquote>
 <p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p>
+
 
 <table>
   <tbody><tr>
@@ -1854,7 +1929,7 @@ gitment.render('gitment-content');
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">18k</span> 字
+                <span class="white-color">19.4k</span> 字
             
 
             
