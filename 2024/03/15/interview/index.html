@@ -848,14 +848,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        5.3k
+                        6.8k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        190分
+                        240分
                     </div>
                     
                 
@@ -1049,8 +1049,79 @@ public class ExceptionUtil{
 <li>    @Value(“#{}”)：表示SpEl(Spring Expression Language是Spring表达式语言，可以在运行时查询和操作数据。)表达式通常用来获取 bean 的属性，或者调用 bean 的某个方法。</li>
 </ul>
 <h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><p>​     启动本机Redis客户端：redis–cli ，此命令连接到本机的Redis服务，同时用PING命令检测本机Redis服务是否启动<br>​     连接远程Redis服务： redis–cli –h host –p port –a “password”<br>​     其中host为远程主机IP地址<br>​     Port为远程Redis服务端口号<br>​     Password为远程Redis服务密码</p>
-<h1 id="MySql"><a href="#MySql" class="headerlink" title="MySql"></a>MySql</h1><p>​    下载解压</p>
-<h1 id="redisclient连接Redis"><a href="#redisclient连接Redis" class="headerlink" title="redisclient连接Redis"></a>redisclient连接Redis</h1>
+<h1 id="MySql"><a href="#MySql" class="headerlink" title="MySql"></a>MySql</h1><p>​    1. <strong>MySQL是什么？它与其他数据库系统相比有何独特之处？</strong></p>
+<ul>
+<li>MySQL是一个开源的关系型数据库管理系统，它提供了高可用性、高性能和易于管理的特性。与其他数据库系统相比，MySQL具有广泛的应用场景、成熟的社区支持和丰富的文档。<ol start="2">
+<li><strong>解释MySQL中的事务（Transaction）及其ACID属性。</strong></li>
+</ol>
+</li>
+<li>事务是一系列操作的逻辑单元，这些操作要么全部完成，要么全部不完成，以保持数据的一致性。ACID属性指的是原子性（Atomicity）、一致性（Consistency）、隔离性（Isolation）和持久性（Durability）。<ol start="3">
+<li><strong>MySQL中InnoDB和MyISAM存储引擎的区别是什么？</strong></li>
+</ol>
+</li>
+<li>InnoDB支持事务和行级锁定，而MyISAM不支持事务和只支持表级锁定。InnoDB适用于需要高并发写入和事务支持的场景，而MyISAM适用于读密集型的应用。<ol start="4">
+<li><strong>请解释MySQL中的JOIN操作，并列举几种JOIN类型。</strong></li>
+</ol>
+</li>
+<li>JOIN操作用于结合两个或多个表中的数据。常见的JOIN类型包括INNER JOIN（返回两个表中都有的记录）、LEFT JOIN（返回左表的所有记录和右表中匹配的记录）、RIGHT JOIN（返回右表的所有记录和左表中匹配的记录）等。<ol start="5">
+<li><strong>如何优化MySQL查询性能？</strong></li>
+</ol>
+</li>
+<li>优化MySQL查询性能的方法包括使用合适的索引、避免在WHERE子句中使用函数、选择合适的数据类型、减少查询中返回的数据量、优化表结构等。<ol start="6">
+<li><strong>什么是索引？它如何提高查询性能？</strong></li>
+</ol>
+</li>
+<li>索引是数据库对象，用于加速数据检索的速度。它类似于书的目录，可以让数据库系统快速定位到表中的特定数据，而无需扫描整个表。通过合理设计索引，可以显著提高查询性能。<ol start="7">
+<li><strong>主键（Primary Key）和外键（Foreign Key）在数据库中分别起什么作用？</strong></li>
+</ol>
+</li>
+<li>主键用于唯一标识表中的每一行记录，确保数据的唯一性。外键用于建立表与表之间的关联关系，保证数据的引用完整性。<ol start="8">
+<li><strong>解释一下数据库的规范化（Normalization）及其目的。</strong></li>
+</ol>
+</li>
+<li>规范化是数据库设计中的一个过程，旨在减少数据冗余和提高数据完整性。通过分解表结构、消除冗余数据，规范化可以减少数据更新时的异常和维护成本。<ol start="9">
+<li><strong>MySQL中的视图（View）是什么？它有什么作用？</strong></li>
+</ol>
+</li>
+<li>视图是基于SQL语句的结果集的可视化表。它本身不存储数据，而是保存了一个SQL查询。视图可以简化复杂的SQL查询、保护数据（通过限制对特定数据的访问）以及提供数据的不同表示形式。<ol start="10">
+<li><strong>你如何理解MySQL中的锁机制？</strong></li>
+</ol>
+<ul>
+<li>锁机制是数据库用来管理并发访问，确保数据一致性和完整性的重要手段。MySQL支持多种锁类型，如表级锁、行级锁等，以满足不同场景下的并发控制需求。<h1 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h1><h4 id="1-请简述MyBatis是什么？它主要用于解决什么问题？"><a href="#1-请简述MyBatis是什么？它主要用于解决什么问题？" class="headerlink" title="1.请简述MyBatis是什么？它主要用于解决什么问题？"></a>1.请简述MyBatis是什么？它主要用于解决什么问题？</h4></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>MyBatis是一个基于Java的持久层框架，它简化了与数据库之间的交互，允许开发者直接编写SQL语句，并提供了灵活的映射配置，将SQL查询结果映射到Java对象上1。</li>
+</ul>
+<h4 id="2-MyBatis中的映射文件是什么？它如何工作？"><a href="#2-MyBatis中的映射文件是什么？它如何工作？" class="headerlink" title="2.MyBatis中的映射文件是什么？它如何工作？"></a>2.MyBatis中的映射文件是什么？它如何工作？</h4><ul>
+<li>映射文件是一个XML文件，用于将Java对象映射到数据库中的表格。它定义了SQL语句和映射规则，以便MyBatis可以将Java对象映射到数据库中的表格中2。</li>
+</ul>
+<h4 id="3-请解释MyBatis中的-和的区别，并指出使用的区别，并指出使用-时需要注意什么？"><a href="#3-请解释MyBatis中的-和的区别，并指出使用的区别，并指出使用-时需要注意什么？" class="headerlink" title="3.请解释MyBatis中的#{ }和的区别，并指出使用的区别，并指出使用{ }时需要注意什么？"></a>3.请解释MyBatis中的#{ }和的区别，并指出使用的区别，并指出使用{ }时需要注意什么？</h4><ul>
+<li>#{ }表示占位符，用于替换参数值，可防止SQL注入；而${ }表示变量，用于在SQL语句中引用变量，但无法防止SQL注入，使用时需要格外注意2。</li>
+</ul>
+<h4 id="4-MyBatis中的一级缓存和二级缓存有什么区别？"><a href="#4-MyBatis中的一级缓存和二级缓存有什么区别？" class="headerlink" title="4.MyBatis中的一级缓存和二级缓存有什么区别？"></a>4.MyBatis中的一级缓存和二级缓存有什么区别？</h4><ul>
+<li>一级缓存是在同一个SqlSession中，对同一个SQL查询的结果进行缓存；而二级缓存是在不同的SqlSession中，对同一个SQL查询的结果进行缓存。一级缓存默认开启，生命周期较短；二级缓存需要手动开启，生命周期较长2。</li>
+</ul>
+<h4 id="5-MyBatis如何实现动态SQL？"><a href="#5-MyBatis如何实现动态SQL？" class="headerlink" title="5.MyBatis如何实现动态SQL？"></a>5.MyBatis如何实现动态SQL？</h4><ul>
+<li>MyBatis中的动态SQL是一种根据不同的条件生成不同SQL语句的技术。它可以根据实际情况生成不同的SQL语句，提高SQL的灵活性和效率。动态SQL可以使用XML和注解两种方式实现23。</li>
+</ul>
+<h4 id="6-请简述MyBatis-Plus与MyBatis的关系及主要区别。"><a href="#6-请简述MyBatis-Plus与MyBatis的关系及主要区别。" class="headerlink" title="6.请简述MyBatis-Plus与MyBatis的关系及主要区别。"></a>6.请简述MyBatis-Plus与MyBatis的关系及主要区别。</h4><ul>
+<li>MyBatis-Plus是基于MyBatis进行扩展的一款持久层框架，它提供了一系列增强功能，如自动生成代码、简化CRUD操作、分页查询等，使得开发更加便捷4。</li>
+</ul>
+<h4 id="7-MyBatis-Plus的主要特性有哪些？"><a href="#7-MyBatis-Plus的主要特性有哪些？" class="headerlink" title="7.MyBatis-Plus的主要特性有哪些？"></a>7.MyBatis-Plus的主要特性有哪些？</h4><ul>
+<li>MyBatis-Plus的主要特性包括代码生成器、通用CRUD操作、分页查询、逻辑删除、自动填充、性能分析、多租户等4。</li>
+</ul>
+<h4 id="8-在MyBatis-Plus中，如何实现分页查询？"><a href="#8-在MyBatis-Plus中，如何实现分页查询？" class="headerlink" title="8.在MyBatis-Plus中，如何实现分页查询？"></a>8.在MyBatis-Plus中，如何实现分页查询？</h4><ul>
+<li>MyBatis-Plus提供了Page类用于分页查询。通过调用Page对象的静态方法并指定当前页和每页大小，可以实现分页查询功能4。</li>
+</ul>
+<h4 id="9-MyBatis-Plus如何处理查询结果和实体类之间的映射关系？"><a href="#9-MyBatis-Plus如何处理查询结果和实体类之间的映射关系？" class="headerlink" title="9.MyBatis-Plus如何处理查询结果和实体类之间的映射关系？"></a>9.MyBatis-Plus如何处理查询结果和实体类之间的映射关系？</h4><ul>
+<li>MyBatis-Plus会根据数据库表和实体类的字段进行自动映射。如果字段名和属性名一致，可以直接映射；如果不一致，可以使用@TableField注解标注数据库列名4。</li>
+</ul>
+<h4 id="10-MyBatis-Plus如何实现逻辑删除？"><a href="#10-MyBatis-Plus如何实现逻辑删除？" class="headerlink" title="10.MyBatis-Plus如何实现逻辑删除？"></a>10.MyBatis-Plus如何实现逻辑删除？</h4><ul>
+<li>逻辑删除是指在数据库中标记一条记录为删除状态，而不是真正地删除它。MyBatis-Plus提供了@TableLogic注解来实现逻辑删除，需要在实体类中标注逻辑删除字段，并通过配置开启逻辑删除功能4。</li>
+</ul>
+
 
 <table>
   <tbody><tr>
@@ -1741,12 +1812,12 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vue/" target="_blank">
-                        <span class="chip bg-color">vue</span>
-                    </a>
-                    
                     <a href="/tags/SpingMvc/" target="_blank">
                         <span class="chip bg-color">SpingMvc</span>
+                    </a>
+                    
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
                     <a href="/tags/SpingBoot/" target="_blank">
@@ -1929,7 +2000,7 @@ gitment.render('gitment-content');
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">19.4k</span> 字
+                <span class="white-color">20.9k</span> 字
             
 
             
@@ -2150,5 +2221,5 @@ $(function () {
         <!-- 背景动态彩带 罗 shw 2018  add 2019.09.15-->
         
 
-    <script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script><script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script></body>
 </html>
