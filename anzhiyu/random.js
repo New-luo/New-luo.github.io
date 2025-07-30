@@ -1,3 +1,3 @@
-var posts=["2025/07/30/hello-world/","2025/07/30/vue/"];function toRandomPost(){
+var posts=["2025/07/30/vue/","2025/07/30/hello-world/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
