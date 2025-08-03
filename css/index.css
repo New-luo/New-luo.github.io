@@ -7609,19 +7609,23 @@ div#bannerGroup {
   }
 }
 #content-inner #recent-posts > .recent-post-item > .recent-post-info > .content {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-height: 1.4;
   color: var(--anzhiyu-secondtext);
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
   font-size: 14px;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  height: 35px;
-  padding: 0px 32px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  height: 0;
 }
 #popup-window {
   min-width: 300px;
@@ -10350,12 +10354,10 @@ h1.page-title + .tag-cloud-list {
 }
 #post-comment .comment-head .comment-switch {
   display: inline-block;
-  float: right;
-  margin: 2px auto 0;
-  padding: 4px 16px;
-  width: max-content;
-  border-radius: 8px;
-  background: #f6f8fa;
+  vertical-align: middle;
+}
+#post-comment .comment-head .comment-switch > span {
+  display: none;
 }
 #post-comment .comment-head .comment-switch .first-comment {
   color: #425aef;
@@ -19360,9 +19362,6 @@ p.p.gray {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-[data-theme='dark'] #post-comment .comment-switch {
-  background: #2c2c2c !important;
-}
 [data-theme='dark'] #post-comment .comment-switch #switch-btn {
   filter: brightness(0.8);
 }
@@ -20253,6 +20252,15 @@ a
   border-top: var(--style-border);
   -webkit-box-shadow: var(--anzhiyu-shadow-border);
   box-shadow: var(--anzhiyu-shadow-border);
+  -webkit-animation: animate-in-and-out 1s linear forwards;
+  -moz-animation: animate-in-and-out 1s linear forwards;
+  -o-animation: animate-in-and-out 1s linear forwards;
+  -ms-animation: animate-in-and-out 1s linear forwards;
+  animation: animate-in-and-out 1s linear forwards;
+  animation-timeline: view();
+}
+#page .tk-comments-container > .tk-comment:has(.OwO-open) {
+  z-index: 1;
 }
 .tk-content {
   margin-top: 0.5rem;
