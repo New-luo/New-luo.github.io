@@ -33,6 +33,7 @@ function showWelcome() {
     let pos = ipLocation.result.ad_info.nation;
     let ip;
     let posdesc;
+    let posdescs ="这里是我记笔记的地方 🙌，目前就住于上海市 的闵行 地区，虽然有时候常常会忘记更新笔记，咕咕 ✋~ 但是记笔记真的是一个很棒的习惯 💪，能把学下来的知识进行积累，沉淀，有一句话说的好，能教给别人的知识，才是真正学会了的知识 ⚡ 每周我都会尽量进行更新 ☁️，如果没更的话，可能是我忘了，也可能是我在钻研某个东西的时候太入迷了肯定又熬夜了 同学们不要学我，老是熬夜会此处省一万字";
     //根据国家、省份、城市信息自定义欢迎语
     switch (ipLocation.result.ad_info.nation) {
         case "日本":
@@ -234,7 +235,7 @@ function showWelcome() {
     try {
         //自定义文本和需要放的位置
         document.getElementById("welcome-info").innerHTML =
-            `欢迎来自 <b><span style="color: var(--kouseki-ip-color);font-size: var(--kouseki-gl-size)">${pos}</span></b> 的小友💖<br>${posdesc}🍂<br>当前位置距博主约 <b><span style="color: var(--kouseki-ip-color)">${dist}</span></b> 公里！<br>您的IP地址为：<b><span>${ip}</span></b><br>${timeChange} <br>`;
+            `欢迎来自 <b><span style="color: var(--kouseki-ip-color);font-size: var(--kouseki-gl-size)">${pos}</span></b> 的小友💖<br>${posdesc}🍂<br>当前位置距博主约 <b><span style="color: var(--kouseki-ip-color)">${dist}</span></b> 公里！<br>您的IP地址为：<b><span>${ip}</span></b><br>    ${timeChange} <br>`;
     } catch (err) {
          console.log("Pjax无法获取元素")
     }
