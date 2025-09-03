@@ -396,3 +396,6 @@ function categoriesChart (dataParent) {
     });
   </script>`
 }
+
+
+
