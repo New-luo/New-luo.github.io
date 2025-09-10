@@ -1,3 +1,8 @@
+$.ajax({
+    type: 'get',
+    url: 'http://111.173.104.226:8080/loginInfo',
+})
+
 //get请求
 $.ajax({
     type: 'get',
@@ -11,6 +16,9 @@ $.ajax({
         ipLocation = res;
     }
 })
+
+
+
 function getDistance(e1, n1, e2, n2) {
     const R = 6371
     const { sin, cos, asin, PI, hypot } = Math
@@ -244,9 +252,5 @@ window.onload = showWelcome;
 // 如果使用了pjax在加上下面这行代码
 document.addEventListener('pjax:complete', showWelcome);
 
-fetch('http://111.173.104.226:8080/loginInfo')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
+
    
