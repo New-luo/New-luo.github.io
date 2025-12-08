@@ -2,6 +2,7 @@ fetch('https://ip9.com.cn/get')
     .then(response => response.json())
     .then(data => {
         ipLocation = data;
+        console.log(data);
         showWelcome();
     })
     .catch(error => console.error('Error:', error));
