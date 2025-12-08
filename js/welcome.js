@@ -1,8 +1,7 @@
-fetch('https://ip9.com.cn/get')
+fetch('https://api.qjqq.cn/api/Local')
     .then(response => response.json())
     .then(data => {
         ipLocation = data;
-        console.log(data);
         showWelcome();
     })
     .catch(error => console.error('Error:', error));
