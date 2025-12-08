@@ -1,4 +1,4 @@
-fetch('https://api.qjqq.cn/api/Local')
+fetch('https://ip9.com.cn/get')
     .then(response => response.json())
     .then(data => {
         ipLocation = data;
