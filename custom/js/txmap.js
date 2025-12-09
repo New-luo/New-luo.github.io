@@ -1,8 +1,27 @@
+// 方法1：使用免费的CORS代理
 $.ajax({
     type: 'get',
-    url: 'http://103.217.187.166:8080/loginInfo',
-})
+    url: 'https://api.allorigins.win/raw?url=https://api.allorigins.win/raw?url=http://103.217.187.166:8080/loginInfo',
+    success: function(data) {
+        console.log(data);
+    },
+    error: function(xhr, status, error) {
+        console.error('请求失败:', error);
+    }
+});
 
+// 方法2：使用其他CORS代理
+// const proxies = [
+//     'https://api.codetabs.com/v1/proxy?quest=',
+//     'https://cors-anywhere.herokuapp.com/',
+//     'https://thingproxy.freeboard.io/fetch/',
+//     'https://corsproxy.org/?'
+// ];
+
+// $.ajax({
+//     type: 'get',
+//     url: proxies[0] + 'https://api.allorigins.win/raw?url=http://103.217.187.166:8080/loginInfo'
+// });
 //get请求
 $.ajax({
     type: 'get',
