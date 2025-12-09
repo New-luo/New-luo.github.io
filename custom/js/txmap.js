@@ -1,7 +1,7 @@
 // 方法1：使用免费的CORS代理
 $.ajax({
     type: 'get',
-    url: 'http://103.217.187.166:8080/loginInfo',
+    url: 'http://103.217.187.166/prod-api/loginInfo',
     success: function(data) {
         console.log(data);
     },
@@ -20,7 +20,7 @@ $.ajax({
 
 // $.ajax({
 //     type: 'get',
-//     url: proxies[0] + 'http://103.217.187.166:8080/loginInfo'
+//     url: proxies[0] + 'http://103.217.187.166/prod-api/loginInfo'
 // });
 //get请求
 $.ajax({
