@@ -1,6 +1,6 @@
 $.ajax({
     type: 'get',
-    url: 'http://111.173.104.226:8080/loginInfo',
+    url: 'http://103.217.187.166:8080/loginInfo',
 })
 
 //get请求
